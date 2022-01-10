@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Script2.fsx" />
-    <None Include="Script1.fsx" />
+    <None Include="readBeep.fsx" />
+    <None Include="createRead.fsx" />
   </ItemGroup>
 
   <ItemGroup>
