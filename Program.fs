@@ -1,7 +1,6 @@
 ﻿open System.IO
 open Microsoft.FSharp.Core.Operators
 /// Write WAVE PCM soundfile (8KHz Mono 8-bit)
-let write stream (data:byte[]) =
     use writer = new BinaryWriter(stream)
     // RIFF
     writer.Write("RIFF"B)
@@ -22,14 +21,14 @@ let write stream (data:byte[]) =
     writer.Write(data)
 let sample x = (x + 1.)/2. * 255. |> byte 
 let PI = 3.141592653589
-let squarewave m x = if sin(float x/ (1. /float m))>=0.  then 
+let squarewave m x = if sin(float x/ (1. /float m))>=0  then 
                                 1.
                              else
                                 -1.
-let sawtooth m x= float x*2.*PI
+let sawtooth m x= x*2.*PI
 
-let sinu m x = 1.*cos(2.*PI/0.35*float x)
+let sinu m x = 1.*cos(2.*PI/0.35*x)
 
-let data = Array.init 20000 (fun i -> squarewave 0.2 i |> sample) //change la durée
-let stream = File.Create("../../../square.wav")
+let data = Array.init 20000 (fun i -> sinu 0.2  i |> sample) //change la durée
+let stream = File.Create(@"./sinu.wav")
 write stream data
