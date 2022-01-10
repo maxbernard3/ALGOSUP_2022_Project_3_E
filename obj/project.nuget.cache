@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5WBYjDttFuaEgmZxSo/OMNY8kJZQEH9Fd27ZXWvYET2sTIwN0g8hWvq7NGswbLLMTsBVk5+SKr7Q+jUkaVeZGQ==",
+  "success": true,
+  "projectFilePath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/ALGOSUP_2022_Project_3_E.fsproj",
+  "expectedPackageFiles": [
+    "/Users/fernandezaurelien/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
