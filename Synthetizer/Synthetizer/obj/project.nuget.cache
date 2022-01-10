@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pD8SEqa28wvX9GpaKALpMF7boJ6jKgO+EdB4EetI49P7SIY2lzBP11dyNfKGy2TaGcRgV0kDbYoikJK6IGO35Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ThéoDIANCOURT\\source\\repos\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ThéoDIANCOURT\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
