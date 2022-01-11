@@ -7,55 +7,33 @@
 > able to play music from code that looks something like the code given
 > below.
 
-+------------------------------------------------------+
-| let note length note octave =                        |
-+======================================================+
-| > Creation.makeNote Creation.sine length note octave |
-+------------------------------------------------------+
-| > \|\> Envelope.apply 0.9 0.5 0.1 0.4                |
-+------------------------------------------------------+
-| > \|\> Filter.flatten 0.4                            |
-+------------------------------------------------------+
-| > \|\> Filter.echo 0.4                               |
-+------------------------------------------------------+
-| let halfNote = note 0.5                              |
-+------------------------------------------------------+
-| let quaterNote = note 0.25                           |
-+------------------------------------------------------+
-| let eightNote = note 0.125                           |
-+------------------------------------------------------+
-| let tune =                                           |
-+------------------------------------------------------+
-| > seq { yield! quaterNote Note.B 4                   |
-+------------------------------------------------------+
-| > yield! quaterNote Note.B 4                         |
-+------------------------------------------------------+
-| > yield! eightNote Note.B 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.B 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.C 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.D 4                          |
-+------------------------------------------------------+
-| > yield! halfNote Note.D 4                           |
-+------------------------------------------------------+
-| > yield! quaterNote Note.D 4                         |
-+------------------------------------------------------+
-| > yield! eightNote Note.D 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.C 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.C 4                          |
-+------------------------------------------------------+
-| > yield! eightNote Note.B 4 }                        |
-+------------------------------------------------------+
-| > \|\> Filter.applyFunction (Fliter.lfo 0.6)         |
-+------------------------------------------------------+
-| // play the tune                                     |
-+------------------------------------------------------+
-| let player = Player.Play(tune, Repeat = true)        |
-+------------------------------------------------------+
+````fs
+ let note length note octave =                        
+> Creation.makeNote Creation.sine length note octave 
+> \|\> Envelope.apply 0.9 0.5 0.1 0.4                
+> \|\> Filter.flatten 0.4                            
+> \|\> Filter.echo 0.4                               
+let halfNote = note 0.5                              
+let quaterNote = note 0.25                           
+let eightNote = note 0.125                           
+let tune =                                           
+> seq { yield! quaterNote Note.B 4                   
+> yield! quaterNote Note.B 4                   
+> yield! eightNote Note.B 4                          
+> yield! eightNote Note.B 4                          
+> yield! eightNote Note.C 4                          
+> yield! eightNote Note.D 4                          
+> yield! halfNote Note.D 4                           
+> yield! quaterNote Note.D 4                         
+> yield! eightNote Note.D 4                          
+> yield! eightNote Note.C 4                          
+> yield! eightNote Note.C 4                          
+> yield! eightNote Note.B 4 }                        
+> \|\> Filter.applyFunction (Fliter.lfo 0.6)         
+// play the tune                                     
+let player = Player.Play(tune, Repeat = true)        
+````
+
 
 > The Deliverables
 >
@@ -63,67 +41,37 @@
 > date. At each for the delivery dates a version of the library should
 > be delivered with a public API described in the relevant part.
 > Alongside this API the following items are required:
-
-+---+-----------------------------------------------------------------+
-| ● | > Unit tests that will automatically show that the logic        |
-|   | > implemented by the API works                                  |
-+===+=================================================================+
-| ● | > correctly                                                     |
-+---+-----------------------------------------------------------------+
-|   | ● Documentation explaining how to use the API                   |
-+---+-----------------------------------------------------------------+
-| ● | > Scripts demonstrate how to use each of the provided functions |
-|   | > and make it easy to play                                      |
-+---+-----------------------------------------------------------------+
-| ● | > and visualizes the resulting souls                            |
-+---+-----------------------------------------------------------------+
-|   | > A script that combines a number of different functions        |
-|   | > implemented to create a pleasing                              |
-+---+-----------------------------------------------------------------+
-|   | > tune                                                          |
-+---+-----------------------------------------------------------------+
+````fs
+> Unit tests that will automatically show that the logic        
+> implemented by the API works                                  
+> correctly                                                     
+Documentation explaining how to use the API                   
+> Scripts demonstrate how to use each of the provided functions 
+ and make it easy to play                                      
+> and visualizes the resulting souls                            
+> A script that combines a number of different functions        
+> implemented to create a pleasing tune                                                          
+````
 
 > Part 1 - Create and Play a Basic Note
->
-> **Delivery date:** 14 January 2022
->
 > The first step in this project is to create and play a simple note. To
 > complete this module, the sound synthesiser's public API should have
 > the following functionalities:
+````fs
+> An oscillator function or functions that can generate the     
+> four basic waveforms at variable                              
 
-+---+-----------------------------------------------------------------+
-| ● | > An oscillator function or functions that can generate the     |
-|   | > four basic waveforms at variable                              |
-+===+=================================================================+
-| ● | > audible frequencies. The four basic wave forms are sine,      |
-|   | > square, triangle and sawtooth.                                |
-+---+-----------------------------------------------------------------+
-|   | > A function to save waveform to disk, so it can be played back |
-|   | > through a standard audio                                      |
-+---+-----------------------------------------------------------------+
-| ● | > application                                                   |
-+---+-----------------------------------------------------------------+
-|   | ● A function to read a section of an audio file from disk       |
-+---+-----------------------------------------------------------------+
-| ● | ● A function to play the waveform directly without saving it to |
-|   | disk                                                            |
-+---+-----------------------------------------------------------------+
+> audible frequencies. The four basic wave forms are sine,      
+> square, triangle and sawtooth.                               
 
-> Hints and tips:
->
-> A good way of checking that wave forms are correct is to use a chart
-> package such as XPlot () to check they look correct.
->
-> It's suggested to save the waveform in the WAV format, because it's a
-> format that's simple and should not require a third part library.
->
-> To play back the sound it will be necessary to call the operating
-> system's audio functions directly or use a library that does this.
->
+> A function to save waveform to disk, so it can be played back 
+through a standard audio                                      
+ > application                                                   
+ ● A function to read a section of an audio file from disk       
+ ● A function to play the waveform directly without saving it to 
+ disk                                                            
+````
 > Part 2 - Basic Filters, Envelopes, and Chords
->
-> **Delivery date:** 21 January 2022
->
 > A filter is a function that takes a waveform and modifies it someway
 > to produce a modified sound. An envelope is a kind of filter used to
 > vary a sound's amplitude over time, helping to give it an interesting
@@ -134,26 +82,19 @@
 > applying a transformation to another.
 >
 > A filters module should be created to provide the following filters:
+````fs
+● Modify the wave's amplitude by a fixed amount                 
 
-+---+-----------------------------------------------------------------+
-| ● | ● Modify the wave's amplitude by a fixed amount                 |
-+===+=================================================================+
-| ● | ● Cut off the wave at specific amplitude to given the           |
-|   | "overdriven" often used in rock songs                           |
-+---+-----------------------------------------------------------------+
-| ● | > Add echo to the sound                                         |
-+---+-----------------------------------------------------------------+
-| ● | > A flange effect filter, for a description of this effect see  |
-|   | > wikipedia:                                                    |
-+---+-----------------------------------------------------------------+
-| ● | > [https://en.wikipedia.org/wiki/Flanging]{.ul}                 |
-+---+-----------------------------------------------------------------+
-|   | > A reverb effect filter, wikipedia has a description of        |
-|   | > reverberation:                                                |
-+---+-----------------------------------------------------------------+
-|   | > [https://en.wikipedia.org/wiki/Reverberation]{.ul}            |
-+---+-----------------------------------------------------------------+
-
+ ● Cut off the wave at specific amplitude to given the           
+"overdriven" often used in rock songs                           
+ > Add echo to the sound                                         
+ > A flange effect filter, for a description of this effect see  
+ > wikipedia:                                                    
+ > [https://en.wikipedia.org/wiki/Flanging]{.ul}                 
+> A reverb effect filter, wikipedia has a description of        
+> reverberation:                                                
+ > [https://en.wikipedia.org/wiki/Reverberation]{.ul}            
+````
 > A four stage envelope should be provided with the following
 > parameters: attack, decay, sustain and release. Wikipedia provides the
 > standard definitions for these parameters:\
@@ -165,9 +106,6 @@
 > waves into a chord.
 >
 > Part 3 - Frequency Analysis and Advanced filters
->
-> **Delivery date:** 28 January 2022
->
 > A spectroscope analyses the frequency of a sound sample. This can then
 > be used to create a low pass or high pass filter. A low pass filter
 > removes low frequency sounds while a high pass filter removes high
@@ -181,9 +119,6 @@
 > provided with both an AM and FM LFO.
 >
 > Part 4 - MP3 Compression
->
-> **Delivery date:** 11 February 2022
->
 > The WAV format is popular because it's easy to use, but the resulting
 > files can be very large. This is a disadvantage for both storage and
 > network transfer. The MP3 format became popular because it can store
