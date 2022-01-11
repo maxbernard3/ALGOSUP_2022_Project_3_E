@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
+    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
   },
   "projects": {
-    "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
-        "packagesPath": "/Users/fernandezaurelien/.nuget/packages/",
-        "outputPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
+        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "packagesPath": "/Users/maxbernard/.nuget/packages/",
+        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/fernandezaurelien/.config/NuGet/NuGet.Config"
+          "/Users/maxbernard/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -35,7 +36,7 @@
           "dependencies": {
             "FSharp.Core": {
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[5.0.0-beta.*, )",
               "generatePathProperty": true
             },
             "System.IO": {
@@ -56,7 +57,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[5.0.13, 5.0.13]"
+              "version": "[5.0.9, 5.0.9]"
             }
           ],
           "frameworkReferences": {
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
         }
       }
     }
