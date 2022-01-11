@@ -41,7 +41,7 @@ let player = Player.Play(tune, Repeat = true)
 > date. At each for the delivery dates a version of the library should
 > be delivered with a public API described in the relevant part.
 > Alongside this API the following items are required:
-````fs
+````
 > Unit tests that will automatically show that the logic        
 > implemented by the API works                                  
 > correctly                                                     
@@ -57,7 +57,7 @@ Documentation explaining how to use the API
 > The first step in this project is to create and play a simple note. To
 > complete this module, the sound synthesiser's public API should have
 > the following functionalities:
-````fs
+````
 > An oscillator function or functions that can generate the     
 > four basic waveforms at variable                              
 
@@ -82,7 +82,7 @@ through a standard audio
 > applying a transformation to another.
 >
 > A filters module should be created to provide the following filters:
-````fs
+````
 ● Modify the wave's amplitude by a fixed amount                 
 
  ● Cut off the wave at specific amplitude to given the           
