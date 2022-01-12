@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {}
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
         "projectName": "fs test",
-        "projectPath": "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
         "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\obj\\",
+        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,10 +35,30 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "CSFML": {
+              "target": "Package",
+              "version": "[2.5.1, )",
+              "generatePathProperty": true
+            },
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Audio": {
+              "target": "Package",
+              "version": "[2.5.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )",
+              "generatePathProperty": true
+            },
+            "sfml.system": {
+              "target": "Package",
+              "version": "[2.5.0, )",
               "generatePathProperty": true
             }
           },

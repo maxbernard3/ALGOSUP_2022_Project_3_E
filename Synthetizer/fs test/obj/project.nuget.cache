@@ -1,10 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "T1IFO/GaJUsQv6w+hKkMGe2YAZqqOuX2I30fiNkZlXzhJy30JMxCGPkmM4WIt/D9OqpZXJRnWFRM52VYlJ9oLA==",
+  "dgSpecHash": "+L1xePb/tfJYJ1EGGFztza42CCGQ4KD8Vp73MFXIEQCCB1zWvRkix9z+NxjwcrSCrXf8j7etrhdcywXP0WcjBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\QuentinClement\\Desktop\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+  "projectFilePath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\csfml\\2.5.1\\csfml.2.5.1.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CSFML 2.5.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CSFML",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
