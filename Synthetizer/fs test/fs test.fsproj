@@ -10,8 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="sflmTest.fs" />
-    <None Include="createRead.fs" />
+    <Compile Include="Trash.fs" />
+    <Compile Include="playWoWav.fs" />
+    <None Include="saveAndPlayWav.fs" />
   </ItemGroup>
 
   <!-- <ItemGroup>

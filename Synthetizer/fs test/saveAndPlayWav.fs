@@ -1,12 +1,8 @@
-﻿open System;
-open System.Collections.Generic;
-open System.Linq;
-open System.Text;
-open System.Threading;
-open System.Threading.Tasks
-open SFML.Audio;
-open SFML.System;
-open System.IO;
+﻿open System  
+open System.IO
+open System.Media  
+open SFML
+
 
 /// Write WAVE PCM soundfile (8KHz Mono 8-bit)
 let write stream (data:byte[]) =
@@ -33,15 +29,13 @@ let sample x = (x + 1.)/2. * 255. |>byte
 
 let data = Array.init 16000 (fun i -> sin (float i/float 8) |> sample)
 
-let stream = File.Create(@"C:\AlgoSup\fsharp\project\sound.wav")
-write stream data
+//let stream = File.Create(@"C:\Users\AntoninPILLET\Desktop\crashtest\F# test folder\fs test\fs test\sound.wav")
 
-type PlaySound() =
-    member x.play filepath =
-        let buffer = new SoundBuffer(filepath:Stream)
-        let sound = new Sound(buffer)
-        sound.Play()
-        do while sound.Status = SoundStatus.Playing do 
-            Thread.Sleep(3000)
-let p = new PlaySound()
-p.play(stream)
+//write stream data
+
+let snd = new SoundPlayer(@"C:\Algosup\F#\Project Sound Synthesis\crashtest\sound.wav");
+snd.Play();
+
+
+
+
