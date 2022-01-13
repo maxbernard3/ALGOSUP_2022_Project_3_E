@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "+L1xePb/tfJYJ1EGGFztza42CCGQ4KD8Vp73MFXIEQCCB1zWvRkix9z+NxjwcrSCrXf8j7etrhdcywXP0WcjBA==",
+  "dgSpecHash": "Wp+v/kxKMC/fpcpJoLrLvPzVnbk+2ZoMajNlz0G3xfyZwKyRGnHDn9/sRU843iyNPUi/QLhVCjWHykbFcppkiQ==",
   "success": true,
-  "projectFilePath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+  "projectFilePath": "C:\\Algosup\\F#\\Project Sound Synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\csfml\\2.5.1\\csfml.2.5.1.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\csfml\\2.5.1\\csfml.2.5.1.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512"
   ],
   "logs": [
     {
