@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
+    "c:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {}
   },
   "projects": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+    "c:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "projectUniqueName": "c:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
-        "packagesPath": "/Users/maxbernard/.nuget/packages/",
-        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
+        "projectPath": "c:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "packagesPath": "C:\\Users\\PaulNOWAK\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maxbernard/.config/NuGet/NuGet.Config"
+          "C:\\Users\\PaulNOWAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -35,8 +36,9 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[5.0.0-beta.*, )",
+              "version": "[5.0.0, )",
               "generatePathProperty": true
             },
             "System.IO": {
@@ -54,18 +56,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[5.0.9, 5.0.9]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
