@@ -7,7 +7,7 @@ let sampleRate = 44100 // In Hertz
 let amplitude = 0.8
 let overdrive = 1.
 let duration = 1. // In seconds
-let pcmFormat = 1s
+let pcmFormat = 1
 let nbChannels = 1
 let bytesPerSample = 2
 
@@ -33,7 +33,7 @@ let doubleWave frequence amplitude t =
 
 let bitsPerSample = bytesPerSample * 8
 
-/// Write WAVE PCM soundfile
+/// Write the WAVE PCM file
 let write stream (data: byte []) =
     let byteRate = sampleRate * nbChannels * bytesPerSample
     let blockAlign = uint16 (nbChannels * bytesPerSample)
@@ -92,4 +92,4 @@ write (File.Create("toneTriangle.wav")) (generate triangleWave)
 write (File.Create("toneSaw.wav")) (generate sawWave)
 write (File.Create("toneDouble.wav")) (generate doubleWave)
 
-let result = read (File.Open("toneSin.wav", FileMode.Open))
+let result = read (File.Open("toneSquare.wav", FileMode.Open))
