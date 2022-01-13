@@ -4,7 +4,8 @@ open System.Media
 open SFML
 
 
-/// Write WAVE PCM soundfile (8KHz Mono 8-bit)
+/// Create a wave with all parameters
+
 let write stream (data:byte[]) =
     let writer = new BinaryWriter(stream)
     // RIFF
@@ -25,16 +26,20 @@ let write stream (data:byte[]) =
     writer.Write(data.Length)
     writer.Write(data)
 
+// Sample convert previous values in bytes
+
 let sample x = (x + 1.)/2. * 255. |>byte
+
+// Data is an array of bytes with all the previous values
 
 let data = Array.init 16000 (fun i -> sin (float i/float 8) |> sample)
 
-//let stream = File.Create(@"C:\Users\AntoninPILLET\Desktop\crashtest\F# test folder\fs test\fs test\sound.wav")
+let stream = File.Create(@"C:\Users\AntoninPILLET\Desktop\crashtest\F# test folder\fs test\fs test\sound.wav")
 
-//write stream data
+write stream data
 
-let snd = new SoundPlayer(@"C:\Algosup\F#\Project Sound Synthesis\crashtest\sound.wav");
-snd.Play();
+let sound = new SoundPlayer(@"C:\Algosup\F#\Project Sound Synthesis\crashtest\sound.wav");
+sound.Play();
 
 
 

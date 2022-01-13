@@ -1,15 +1,10 @@
-﻿open System;
-open System.Collections.Generic;
-open System.Linq;
-open System.Text;
-open System.Threading;
-open System.Threading.Tasks
-open System.IO;
-open SFML;
-open SFML.Audio;
+﻿open System.Threading
+open System.IO
+open SFML.Audio
 
 
-/// Write WAVE PCM soundfile (8KHz Mono 8-bit)
+// Create a wave with all parameters
+
 let write stream (data:byte[]) =
     let writer = new BinaryWriter(stream)
     // RIFF
@@ -30,16 +25,20 @@ let write stream (data:byte[]) =
     writer.Write(data.Length)
     writer.Write(data)
 
-let sample x = (x + 1.)/2. * 255. |>byte
+// Sample convert previous values in bytes
+
+let sample x = (x + 1.)/2. * 255. |> byte
+
+// Data is an array of bytes with all the previous values
 
 let data = Array.init 16000 (fun i -> sin (float i/float 8) |> sample)
 
-//let stream = File.Create(@"C:\Users\AntoninPILLET\Desktop\crashtest\F# test folder\fs test\fs test\sound.wav")
-
-//write stream data
-
+// PlaySound is a class that contains the function play
 
 type PlaySound() =
+
+// play is the function that play the contain of data
+
     member x.play stream =
         let buffer = new SoundBuffer(stream:Stream)
         let sound = new Sound(buffer)
@@ -48,8 +47,13 @@ type PlaySound() =
         do while sound.Status = SoundStatus.Playing do 
             Thread.Sleep(1)
 
-
 let p = new PlaySound()
+
+// convert is used to convert data's bytes in stream
+
 let convert = new MemoryStream()
 write convert data
+
+// Call the play function with convert values
+
 p.play(convert)

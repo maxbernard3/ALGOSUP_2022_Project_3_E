@@ -532,19 +532,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AntoninPILLET\\.nuget\\packages\\": {}
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Algosup\\F#\\Project Sound Synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+      "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
       "projectName": "fs test",
-      "projectPath": "C:\\Algosup\\F#\\Project Sound Synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
-      "packagesPath": "C:\\Users\\AntoninPILLET\\.nuget\\packages\\",
-      "outputPath": "C:\\Algosup\\F#\\Project Sound Synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\obj\\",
+      "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+      "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
+      "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AntoninPILLET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -607,7 +607,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   },
