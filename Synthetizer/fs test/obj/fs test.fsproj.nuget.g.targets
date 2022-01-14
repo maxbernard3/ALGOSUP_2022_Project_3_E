@@ -7,3 +7,4 @@
     <Import Project="$(NuGetPackageRoot)csfml\2.5.1\build\netframework\CSFML.targets" Condition="Exists('$(NuGetPackageRoot)csfml\2.5.1\build\netframework\CSFML.targets')" />
   </ImportGroup>
 </Project>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
