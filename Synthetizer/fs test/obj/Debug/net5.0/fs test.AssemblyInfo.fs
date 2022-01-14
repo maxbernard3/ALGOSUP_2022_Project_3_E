@@ -7,11 +7,11 @@ open System
 open System.Reflection
 
 
-[<assembly: System.Reflection.AssemblyCompanyAttribute("fs test")>]
+[<assembly: System.Reflection.AssemblyCompanyAttribute("Synthetizer")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
 [<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
-[<assembly: System.Reflection.AssemblyProductAttribute("fs test")>]
-[<assembly: System.Reflection.AssemblyTitleAttribute("fs test")>]
+[<assembly: System.Reflection.AssemblyProductAttribute("Synthetizer")>]
+[<assembly: System.Reflection.AssemblyTitleAttribute("Synthetizer")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
 do()
