@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {}
+  },
+  "projects": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+        "projectName": "fs test",
+        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\fs test.fsproj",
+        "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
+        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\fs test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "CSFML": {
+              "target": "Package",
+              "version": "[2.5.1, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Audio": {
+              "target": "Package",
+              "version": "[2.5.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )",
+              "generatePathProperty": true
+            },
+            "sfml.system": {
+              "target": "Package",
+              "version": "[2.5.0, )",
+              "generatePathProperty": true
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0-beta.*, )",
+              "generatePathProperty": true
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[5.0.9, 5.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
