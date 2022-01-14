@@ -81,7 +81,7 @@ let generate func =
     let toBytes x =
         let unitary = (x + 2. ** (float bytesPerSample - 1.)) / 2.
         let upscaled = round (unitary * (256. ** (float bytesPerSample))) - (if unitary = 1. then 1. else 0.)
-        [ for k in 0..(bytesPerSample-1) do byte (upscaled/(256.**k)) ]
+        [ for k in 0..(bytesPerSample-1) do byte (upscaled/(256.**float k)) ]
 
     let getData = float >> (fun x -> (x / float sampleRate)) >> func (freq/2.) amplitude >> makeOverdrive overdrive >> toBytes
     [ for i in 0 .. (size - 1) do yield! getData i ] |> Array.ofList
