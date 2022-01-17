@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {}
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
-        "packagesPath": "C:\\Users\\PaulNOWAK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
+        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
+        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PaulNOWAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,7 +38,12 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[6.0.1, )",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )",
               "generatePathProperty": true
             },
             "System.IO": {

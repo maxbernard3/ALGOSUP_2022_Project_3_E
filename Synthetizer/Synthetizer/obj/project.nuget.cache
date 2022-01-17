@@ -1,16 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "O2uh7V/iaTqCgo3djWz3v0e2EA55bwT1C52GYnNyxQl1Vmlzbzs85Y0kCBCaFgWcrrKWARxBU8tpOkHXYae3jw==",
+  "dgSpecHash": "LlG+Nea4UKOTsxEtpMBVIvCwZRnDXiFGRslXCLU3ulcx4uQaSNUA44UNMDRp0VAQOrA9hG14OG5WmzXO9aWHZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+  "projectFilePath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\PaulNOWAK\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.graphics\\2.5.0\\sfml.graphics.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.net\\2.5.0\\sfml.net.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.system\\2.5.0\\sfml.system.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\sfml.window\\2.5.0\\sfml.window.2.5.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\QuentinClement\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
