@@ -25,6 +25,10 @@
 
 <p>An example or two demonstrating the program functionality would be a plus</p>
 
+<p>you can see our project execution plan at : </p>
+
+- https://trello.com/b/5vm9y4m5/sythetizer-project-3-grp-e
+
 ---
 ## Technical Specifications
 
