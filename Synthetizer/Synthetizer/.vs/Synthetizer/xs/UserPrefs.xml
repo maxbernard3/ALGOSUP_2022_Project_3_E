@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{F1B206A0-CC5F-4C73-8414-423B7ED675AB}|Default">
+  <MonoDevelop.Ide.ItemProperties.Synthetizer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer.test/Tests.fs">
+    <Files>
+      <File FileName="Program.fs" Line="16" Column="26" />
+      <File FileName="Synthetizer.test/Tests.fs" Line="60" Column="56" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Synthetizer" expanded="True">
+            <Node name="Synthetizer" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Synthetizer.test" expanded="True">
+              <Node name="Tests.fs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Synthetizer" expanded="True">
+            <Node name="Synthetizer.test" expanded="True">
+              <Node name="Tests" expanded="True">
+                <Node name="doubleWave" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
