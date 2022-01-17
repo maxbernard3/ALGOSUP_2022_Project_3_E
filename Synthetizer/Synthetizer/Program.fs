@@ -31,6 +31,9 @@ namespace Synth
 
         let triangleWave frequence amplitude t =
             2. * amplitude * asin (sin (2. * pi * t * frequence/float sampleRate)) / pi
+            
+        let fusedData fullwave = 
+            fullwave |> Array.concat
 
         open System.IO
 
@@ -56,9 +59,12 @@ namespace Synth
             writer.Write(data)
 
         let sample x = (x + 1.)/2. * 255. |> byte 
-        let data = Array.init (int (float sampleRate * duration)) (fun i -> makeChord [(sinWave 5 1 i); (triangleWave 5 1 i)] |> sample)
-        let stream = File.Create("tone.wav")
+        let data1 = Array.init (int (float sampleRate * duration)) (fun i -> triangleWave 200 1 i |> sample)
+        let data2 = Array.init (int (float sampleRate * duration)) (fun i -> sinWave 500 1 i |> sample)
+        let data3 = fusedData [|data1; data2|]
+
+        let stream = File.Create("fusedTone.wav")
 
         //let result = read (File.Open("toneSquare.wav", FileMode.Open))
 
-        write stream data
+        write stream data3

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
+    "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {}
   },
   "projects": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+    "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "projectUniqueName": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
-        "packagesPath": "/Users/maxbernard/.nuget/packages/",
-        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
+        "projectPath": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "packagesPath": "C:\\Users\\PaulNOWAK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PaulNOWAK\\Desktop\\Algosup\\Computering\\Projects\\Project sound synthesis\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maxbernard/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\PaulNOWAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
