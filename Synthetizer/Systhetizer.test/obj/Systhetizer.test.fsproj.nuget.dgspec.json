@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj": {}
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj": {}
   },
   "projects": {
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
-        "packagesPath": "/Users/maxbernard/.nuget/packages/",
-        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
+        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
+        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maxbernard/.config/NuGet/NuGet.Config"
+          "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -35,8 +36,14 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[5.0.0-beta.*, )",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )",
               "generatePathProperty": true
             },
             "System.IO": {
@@ -54,46 +61,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[5.0.9, 5.0.9]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj": {
+    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
+        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj",
         "projectName": "Systhetizer.test",
-        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
-        "packagesPath": "/Users/maxbernard/.nuget/packages/",
-        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/obj/",
+        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj",
+        "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
+        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/maxbernard/.config/NuGet/NuGet.Config"
+          "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
-                "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj"
+              "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
+                "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj"
               }
             }
           }
@@ -104,8 +106,9 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[5.0.0-beta.*, )",
+              "version": "[5.0.0, )",
               "generatePathProperty": true
             },
             "Microsoft.NET.Test.Sdk": {
@@ -144,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-rc.1.21463.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
