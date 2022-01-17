@@ -18,6 +18,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - run: cd Synthetizer/Synthetizer/
+    - run: ls
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
