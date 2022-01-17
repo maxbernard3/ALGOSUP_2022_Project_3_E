@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Synthetizer",
-    "\\Synthetizer\\Synthetizer"
+    "\\Synthetizer\\Synthetizer",
+    "\\Synthetizer\\Systhetizer.test"
   ],
   "SelectedNode": "\\Synthetizer\\Synthetizer\\Program.fs",
   "PreviewInSolutionExplorer": false
