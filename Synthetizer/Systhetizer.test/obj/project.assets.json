@@ -1235,7 +1235,7 @@
       },
       "Synthetizer/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "FSharp.Core": "5.0.0",
           "SFML.Net": "2.5.0",
@@ -4386,34 +4386,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\QuentinClement\\.nuget\\packages\\": {}
+    "/Users/maxbernard/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj",
+      "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
       "projectName": "Systhetizer.test",
-      "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\Systhetizer.test.fsproj",
-      "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
-      "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Systhetizer.test\\obj\\",
+      "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
+      "packagesPath": "/Users/maxbernard/.nuget/packages/",
+      "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/maxbernard/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
-              "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj"
+            "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+              "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj"
             }
           }
         }
@@ -4424,7 +4422,6 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "FSharp.Core": {
-            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[5.0.0, )",
             "generatePathProperty": true
@@ -4465,7 +4462,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
