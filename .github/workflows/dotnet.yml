@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: src/Synthetizer/Synthetizer/
+      working-directory: /Synthetizer/Synthetizer/
     - name: Build
       run: dotnet build --no-restore
     - name: Test
