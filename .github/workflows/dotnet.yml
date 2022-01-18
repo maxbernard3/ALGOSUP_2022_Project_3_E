@@ -23,6 +23,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --verbosity normal
       working-directory: Synthetizer\
-    - name: TestRun
-      run: dotnet run --no-build --verbosity normal
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
       working-directory: Synthetizer\
