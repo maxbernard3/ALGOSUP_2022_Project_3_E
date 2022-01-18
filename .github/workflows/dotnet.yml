@@ -9,18 +9,20 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0
-    - run: cd Synthetizer/Synthetizer/
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: Synthetizer\Synthetizer\
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build --no-restore --verbosity normal
+      working-directory: Synthetizer\Synthetizer\
+    - name: TestRun
+      run: dotnet run --no-build --verbosity normal
+      working-directory: Synthetizer\Synthetizer\
