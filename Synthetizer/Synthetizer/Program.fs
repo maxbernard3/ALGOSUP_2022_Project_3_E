@@ -93,3 +93,15 @@ namespace Synth
         // Call the play function with convert values
     
         p.play(convert)
+
+        //let Reverb wave =
+        //    let delayMilliseconds = 500 // half a second
+        //    int delaySamples = 
+        //        (int)((float)delayMilliseconds * sampleRate/1000)
+        //    float decay = 0.5f;
+        //    for (int i = 0; i < buffer.length - delaySamples; i++)
+        //    {
+        //        // WARNING: overflow potential
+        //        buffer[i + delaySamples] += (short)((float)buffer[i] * decay);
+        //    }
+        
