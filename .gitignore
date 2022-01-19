@@ -9,7 +9,7 @@ CHECKLIST.md
 *.userosscache
 *.sln.docstates
 .vscode/
-
+.wave
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -145,7 +145,7 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish/
+main/
 
 # Publish Web Output
 *.[Pp]ublish.xml

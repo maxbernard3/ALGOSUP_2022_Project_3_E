@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {}
+    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
   },
   "projects": {
-    "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj": {
+    "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
+        "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
         "projectName": "Synthetizer",
-        "projectPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\Synthetizer.fsproj",
-        "packagesPath": "C:\\Users\\QuentinClement\\.nuget\\packages\\",
-        "outputPath": "C:\\AlgoSup\\ALGOSUP_2022_Project_3_E\\Synthetizer\\Synthetizer\\obj\\",
+        "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj",
+        "packagesPath": "/Users/maxbernard/.nuget/packages/",
+        "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\QuentinClement\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/maxbernard/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,7 +34,6 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "FSharp.Core": {
-              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.0.0, )",
               "generatePathProperty": true
@@ -66,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
