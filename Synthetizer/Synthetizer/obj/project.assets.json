@@ -307,6 +307,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "SFML.Audio/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -413,6 +422,19 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
+        }
+      },
+      "XPlot.Plotly/4.0.6": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/XPlot.Plotly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XPlot.Plotly.dll": {}
         }
       }
     }
@@ -542,6 +564,37 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "SFML.Audio/2.5.0": {
@@ -915,13 +968,28 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "XPlot.Plotly/4.0.6": {
+      "sha512": "5qLab8jB4ZxmRl2z+Me47k5fsMOW0vPiAXpuoYashGUmolP3+xDg1SWsvodsbr+Q6ipcJhp97Cyq8qDzCHFEDA==",
+      "type": "package",
+      "path": "xplot.plotly/4.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/XPlot.Plotly.dll",
+        "lib/netstandard2.0/XPlot.Plotly.xml",
+        "logo.png",
+        "xplot.plotly.4.0.6.nupkg.sha512",
+        "xplot.plotly.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FSharp.Core >= 5.0.0",
       "SFML.Net >= 2.5.0",
-      "System.IO >= 4.3.0"
+      "System.IO >= 4.3.0",
+      "XPlot.Plotly >= 4.0.6"
     ]
   },
   "packageFolders": {
@@ -972,6 +1040,11 @@
           "System.IO": {
             "target": "Package",
             "version": "[4.3.0, )"
+          },
+          "XPlot.Plotly": {
+            "target": "Package",
+            "version": "[4.0.6, )",
+            "generatePathProperty": true
           }
         },
         "imports": [

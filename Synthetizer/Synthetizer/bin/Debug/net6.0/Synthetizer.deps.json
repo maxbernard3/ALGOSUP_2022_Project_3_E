@@ -10,7 +10,8 @@
         "dependencies": {
           "FSharp.Core": "5.0.0",
           "SFML.Net": "2.5.0",
-          "System.IO": "4.3.0"
+          "System.IO": "4.3.0",
+          "XPlot.Plotly": "4.0.6"
         },
         "runtime": {
           "Synthetizer.dll": {}
@@ -361,6 +362,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "SFML.Audio/2.5.0": {
         "dependencies": {
           "CSFML": "2.5.0",
@@ -447,6 +456,18 @@
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
+      },
+      "XPlot.Plotly/4.0.6": {
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/XPlot.Plotly.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -483,6 +504,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "SFML.Audio/2.5.0": {
       "type": "package",
@@ -546,6 +574,13 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "XPlot.Plotly/4.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5qLab8jB4ZxmRl2z+Me47k5fsMOW0vPiAXpuoYashGUmolP3+xDg1SWsvodsbr+Q6ipcJhp97Cyq8qDzCHFEDA==",
+      "path": "xplot.plotly/4.0.6",
+      "hashPath": "xplot.plotly.4.0.6.nupkg.sha512"
     }
   }
 }

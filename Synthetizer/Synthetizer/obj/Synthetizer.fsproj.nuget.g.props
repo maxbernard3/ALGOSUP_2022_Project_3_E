@@ -16,7 +16,8 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSFML_Net Condition=" '$(PkgSFML_Net)' == '' ">C:\Users\QuentinClement\.nuget\packages\sfml.net\2.5.0</PkgSFML_Net>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\QuentinClement\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgXPlot_Plotly Condition=" '$(PkgXPlot_Plotly)' == '' ">C:\Users\QuentinClement\.nuget\packages\xplot.plotly\4.0.6</PkgXPlot_Plotly>
+    <PkgSFML_Net Condition=" '$(PkgSFML_Net)' == '' ">C:\Users\QuentinClement\.nuget\packages\sfml.net\2.5.0</PkgSFML_Net>
   </PropertyGroup>
 </Project>

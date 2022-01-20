@@ -138,3 +138,5 @@ C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\obj\Debug\net6.0\Syn
 C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\obj\Debug\net6.0\Synthetizer.dll
 C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\obj\Debug\net6.0\Synthetizer.pdb
 C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\obj\Debug\net6.0\Synthetizer.genruntimeconfig.cache
+C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\AlgoSup\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\bin\Debug\net6.0\XPlot.Plotly.dll

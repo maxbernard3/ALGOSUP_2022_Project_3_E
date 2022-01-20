@@ -49,6 +49,11 @@
             "System.IO": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "XPlot.Plotly": {
+              "target": "Package",
+              "version": "[4.0.6, )",
+              "generatePathProperty": true
             }
           },
           "imports": [

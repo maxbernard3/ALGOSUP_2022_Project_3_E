@@ -4,6 +4,8 @@ namespace Synth
         open System.IO
         open SFML.Audio
         open System.Threading
+        open XPlot.Plotly
+        open SFML
 
         let pi = Math.PI
         let sampleRate = 44100 // In Hertz
@@ -71,17 +73,33 @@ namespace Synth
 
         write stream data3
 
-        type PlaySound() =
+        module fourStageEnveloppe =
+            
+            let enveloppe (A:float) (D:float) (S:float) (R:float) (amplitude:float) (time:float) (decayVar:float) =
+            
+                let floatSampleRate = 44100.
+                let Attack = Array.init (int (floatSampleRate*A*time)) (fun i -> amplitude/(floatSampleRate*A*time)* float i)
+                let Decay = Array.init (int (floatSampleRate*D*time)) (fun i -> amplitude - decayVar/(floatSampleRate*D*time)* float i)
+                let Sustain = Array.init (int (time*(floatSampleRate - floatSampleRate*R- floatSampleRate*D - floatSampleRate*A))) (fun _ -> S*amplitude)
+                let Release = Array.init (int (floatSampleRate*A*time)) (fun i -> (amplitude - decayVar) - 0.5/(floatSampleRate*A*time)* float i)
+                let finalData = fusedData[|Attack; Decay; Sustain; Release|]
+                finalData
+        
+            let finalData = enveloppe 0.1 0.05 0.5 0.5 1. 0.5 0.5
+        
+            finalData |> Chart.Line |> Chart.Show
+
+         type PlaySound() =
         
             // play is the function that play the contain of data
         
-                member x.play stream =
-                    let buffer = new SoundBuffer(stream:Stream)
-                    let sound = new Sound(buffer)
-                    sound.Play()
-          
-                    do while sound.Status = SoundStatus.Playing do 
-                        Thread.Sleep(1)
+            member x.play stream =
+                let buffer = new SoundBuffer(stream:Stream)
+                let sound = new Sound(buffer)
+                sound.Play()
+            
+                do while sound.Status = SoundStatus.Playing do 
+                    Thread.Sleep(1)
         
         let p = new PlaySound()
     
