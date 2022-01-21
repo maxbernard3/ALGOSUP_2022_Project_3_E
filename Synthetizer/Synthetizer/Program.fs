@@ -77,7 +77,7 @@ namespace Synth
             
             let enveloppe (A:float) (D:float) (S:float) (R:float) (amplitude:float) (time:float) (decayVar:float) =
             
-                let floatSampleRate = 44100.
+                let floatSampleRate = float sampleRate
                 let Attack = Array.init (int (floatSampleRate*A*time)) (fun i -> amplitude/(floatSampleRate*A*time)* float i)
                 let Decay = Array.init (int (floatSampleRate*D*time)) (fun i -> amplitude - decayVar/(floatSampleRate*D*time)* float i)
                 let Sustain = Array.init (int (time*(floatSampleRate - floatSampleRate*R- floatSampleRate*D - floatSampleRate*A))) (fun _ -> S*amplitude)
@@ -100,17 +100,6 @@ namespace Synth
             
                 do while sound.Status = SoundStatus.Playing do 
                     Thread.Sleep(1)
-        type PlaySound() =
-        
-            // play is the function that play the contain of data
-        
-                member x.play stream =
-                    let buffer = new SoundBuffer(stream:Stream)
-                    let sound = new Sound(buffer)
-                    sound.Play()
-          
-                    do while sound.Status = SoundStatus.Playing do 
-                        Thread.Sleep(1)
         
         let p = new PlaySound()
     
