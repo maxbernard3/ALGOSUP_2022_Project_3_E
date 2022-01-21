@@ -100,6 +100,17 @@ namespace Synth
             
                 do while sound.Status = SoundStatus.Playing do 
                     Thread.Sleep(1)
+        type PlaySound() =
+        
+            // play is the function that play the contain of data
+        
+                member x.play stream =
+                    let buffer = new SoundBuffer(stream:Stream)
+                    let sound = new Sound(buffer)
+                    sound.Play()
+          
+                    do while sound.Status = SoundStatus.Playing do 
+                        Thread.Sleep(1)
         
         let p = new PlaySound()
     

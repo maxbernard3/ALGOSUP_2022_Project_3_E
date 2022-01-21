@@ -1,30 +1,27 @@
 ﻿<Properties StartupConfiguration="{51B1E91F-63A8-4638-A718-4B3FFAD72308}|Default">
   <MonoDevelop.Ide.ItemProperties.Synthetizer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer/Program.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer/Reverb.fs">
     <Files>
-      <File FileName="Synthetizer/Program.fs" Line="39" Column="19" />
-      <File FileName="Systhetizer.test/UnitTest1.fs" Line="52" Column="49" />
+      <File FileName="Systhetizer.test/UnitTest1.fs" Line="16" Column="56" />
+      <File FileName="Synthetizer/Program.fs" Line="74" Column="9" />
+      <File FileName="Synthetizer/Reverb.fs" Line="22" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Synthetizer" expanded="True">
-            <Node name="Synthetizer" expanded="True">
-              <Node name="Program.fs" selected="True" />
+            <Node name="Synthetizer" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True" />
             </Node>
-            <Node name="Systhetizer.test" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Synthetizer" expanded="True">
-            <Node name="Systhetizer.test" expanded="True">
-              <Node name="Systhetizer" expanded="True">
-                <Node name="test" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Synthetizer" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

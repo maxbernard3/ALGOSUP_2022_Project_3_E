@@ -15,6 +15,5 @@
     <PackageReference Include="System.IO" Version="4.3.0">
       <GeneratePathProperty></GeneratePathProperty>
     </PackageReference>
-    <PackageReference Include="XPlot.Plotly" Version="4.0.6" />
   </ItemGroup>
 </Project>
