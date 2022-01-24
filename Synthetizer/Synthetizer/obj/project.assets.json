@@ -414,6 +414,20 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Synthetizer.lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "SFML.Net": "2.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Synthetizer.lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Synthetizer.lib.dll": {}
+        }
       }
     }
   },
@@ -915,12 +929,18 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Synthetizer.lib/1.0.0": {
+      "type": "project",
+      "path": "../Synthetizer.lib/Synthetizer.lib.fsproj",
+      "msbuildProject": "../Synthetizer.lib/Synthetizer.lib.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FSharp.Core >= 5.0.0",
       "SFML.Net >= 2.5.0",
+      "Synthetizer.lib >= 1.0.0",
       "System.IO >= 4.3.0"
     ]
   },
@@ -948,7 +968,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj": {
+              "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj"
+            }
+          }
         }
       }
     },

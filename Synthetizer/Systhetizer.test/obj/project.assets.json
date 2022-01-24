@@ -1239,6 +1239,7 @@
         "dependencies": {
           "FSharp.Core": "5.0.0",
           "SFML.Net": "2.5.0",
+          "Synthetizer.lib": "1.0.0",
           "System.IO": "4.3.0"
         },
         "compile": {
@@ -1246,6 +1247,20 @@
         },
         "runtime": {
           "bin/placeholder/Synthetizer.dll": {}
+        }
+      },
+      "Synthetizer.lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FSharp.Core": "5.0.0",
+          "SFML.Net": "2.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Synthetizer.lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Synthetizer.lib.dll": {}
         }
       }
     }
@@ -4373,6 +4388,11 @@
       "type": "project",
       "path": "../Synthetizer/Synthetizer.fsproj",
       "msbuildProject": "../Synthetizer/Synthetizer.fsproj"
+    },
+    "Synthetizer.lib/1.0.0": {
+      "type": "project",
+      "path": "../Synthetizer.lib/Synthetizer.lib.fsproj",
+      "msbuildProject": "../Synthetizer.lib/Synthetizer.lib.fsproj"
     }
   },
   "projectFileDependencyGroups": {

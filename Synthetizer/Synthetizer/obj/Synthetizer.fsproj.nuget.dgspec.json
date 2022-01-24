@@ -4,6 +4,70 @@
     "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {}
   },
   "projects": {
+    "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj",
+        "projectName": "Synthetizer.lib",
+        "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj",
+        "packagesPath": "/Users/fernandezaurelien/.nuget/packages/",
+        "outputPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/fernandezaurelien/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "SFML.Net": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +89,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj": {
+                "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer.lib/Synthetizer.lib.fsproj"
+              }
+            }
           }
         }
       },

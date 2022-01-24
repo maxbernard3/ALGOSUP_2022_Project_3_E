@@ -1,55 +1,19 @@
-﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94950056-3F77-49CD-BF9B-D82955A7AC60}</ProjectGuid>
-    <UseStandardResourceNames>true</UseStandardResourceNames>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Synthetizer.lib</RootNamespace>
-    <UsePartialTypes>false</UsePartialTypes>
-    <AssemblyName>Synthetizer.lib</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <GenerateTailCalls>true</GenerateTailCalls>
-    <PlatformTarget></PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup>
-    <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(VisualStudioVersion)' == '10.0' OR '$(VisualStudioVersion)' == '11.0'">
-    <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="FSharp.Core">
-      <HintPath>..\packages\FSharp.Core.6.0.1\lib\netstandard2.0\FSharp.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Script.fsx" />
+    <Compile Include="Library.fs" />
     <Compile Include="Waves.fs" />
-    <Compile Include="filters.fs" />
-    <Compile Include="Main.fs" />
-    <None Include="packages.config" />
+    <Compile Include="Filters.fs" />
+    <Compile Include="SoundPlayer.fs" />
+    <Compile Include="main.fs" />
   </ItemGroup>
-  <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <PackageReference Include="SFML.Net" Version="2.5.0">
+      <GeneratePathProperty></GeneratePathProperty>
+    </PackageReference>
+  </ItemGroup>
 </Project>

@@ -17,4 +17,7 @@
       <GeneratePathProperty></GeneratePathProperty>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Synthetizer.lib\Synthetizer.lib.fsproj" />
+  </ItemGroup>
 </Project>
