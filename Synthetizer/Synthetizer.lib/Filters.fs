@@ -1,28 +1,24 @@
-﻿namespace Synth
+﻿namespace Synthetizer.lib
     module Filters =
         open System
 
+        let sampleRate = GlobalVar.bytesPerSample
 
-
-        let pi = Math.PI
-        let sampleRate = 44100 // In Hertz
-
-        let makeOverdrive multiplicator x =
-            if x < (-1. * multiplicator) then (-1. * multiplicator) else
-            if x > 1. * multiplicator then 1. * multiplicator else
-            x
+        let makeOverdrive multiplicator wave =
+            let logic x =
+                if x < (-1. * multiplicator) then (-1. * multiplicator) else
+                if x > 1. * multiplicator then 1. * multiplicator else
+                x
+            wave |> Array.map(fun x -> logic x)
 
         let makeChord waves =
             let returnArr = Array.create (Array.get waves 0 |>   Array.length) 0.
             for i=0 to ((Array.get waves 0 |> Array.length)-1) do
                 let result = Array.create (Array.length waves) 0.
     
-                waves |> Array.iteri (fun j x -> Array.fill result j 1 (Array.get     (Array.get waves j) i))
+                waves |> Array.iteri (fun j x -> Array.fill result j 1 (Array.get(Array.get waves j) i))
                 Array.fill returnArr i 1 (Array.average result)
             returnArr
-
-        let fusedData fullwave = 
-            fullwave |> Array.concat
 
         let echo (wave:array<float>) (startEcho:float) (endEcho:float) (delay:float) (numberOfEcho:int)=
             let start= startEcho * float sampleRate |> int

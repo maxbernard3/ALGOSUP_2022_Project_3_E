@@ -1,23 +1,19 @@
-﻿namespace Synth
+﻿namespace Synthetizer.lib
     module Waves =
   
         open System
-
-        let pi = Math.PI
-        let sampleRate = 44100 // In Hertz
-  
-
+        let sampleRate = GlobalVar.sampleRate
 
         let sinWave frequence amplitude t  =
-            amplitude * sin (2. * pi * float t * frequence / float sampleRate)
+            amplitude * sin (2. * Math.PI * float t * frequence / float sampleRate)
 
         let sawWave frequence amplitude t =
             2. * amplitude * (float t * frequence/float sampleRate - floor (0.5 +  float t * frequence/float sampleRate))
 
         let squareWave frequence amplitude t =
-            amplitude * float (sign (sin (2. * pi * float t * frequence/float sampleRate)))
+            amplitude * float (sign (sin (2. * Math.PI * float t * frequence/float sampleRate)))
 
         let triangleWave frequence amplitude t =
-            2. * amplitude * asin (sin (2. * pi * float t * frequence/float sampleRate)) / pi
+            2. * amplitude * asin (sin (2. * Math.PI * float t * frequence/float sampleRate)) / Math.PI
     
         

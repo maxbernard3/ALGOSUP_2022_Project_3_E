@@ -1,46 +1,28 @@
-﻿namespace Synth
+﻿namespace Synthetizer.lib
     module Main =
-        
+        let sampleRate = GlobalVar.sampleRate
+
         open System
         open System.IO
         open System.Threading
 
-        let pi = Math.PI
-        let sampleRate = 44100 // In Hertz
-        let overdrive = 1.
-        let duration = 2. // In seconds
-        let pcmFormat = 1
-        let nbChannels = 1
-        let bytesPerSample = 2
 
-/// Write WAVE PCM soundfile 
-        let write stream (data:byte[]) =
-            let writer = new BinaryWriter(stream)
-            // RIFF
-            writer.Write("RIFF"B)
-            let size = 36 + data.Length in writer.Write(size)
-            writer.Write("WAVE"B)
-            // fmt
-            writer.Write("fmt "B)
-            let headerSize = 16 in writer.Write(headerSize)
-            let pcmFormat = 1s in writer.Write(pcmFormat)
-            let mono = 1s in writer.Write(mono)
-            let sampleRate = sampleRate in writer.Write(sampleRate)
-            let byteRate = sampleRate in writer.Write(byteRate)
-            let blockAlign = 1s in writer.Write(blockAlign)
-            let bitsPerSample = 8s in writer.Write(bitsPerSample)
-            // data
-            writer.Write("data"B)
-            writer.Write(data.Length)
-            writer.Write(data)
+        let fusedData fullwave = 
+            fullwave |> Array.concat
 
-        let sample x = (x + 1.)/2. * 255. |> byte 
-        let data1 = Array.init (int (float sampleRate * duration)) (fun i ->Waves.triangleWave 200. 1. i |> sample)
-        let data2 = Array.init (int (float sampleRate * duration)) (fun i -> Waves.sinWave 500. 1. i )
-        let data3 =  Filters.echo data2 1. 1.1 0.2 3 |>Array.map (fun x -> sample x)
+        let toBytes i = i |> Array.map(fun x -> (x + 1.)/2. * 255. |> byte)
 
-        let stream = File.Create("../../../test.wav")
+        let CreateWave (waveForm:string) (frequency:float) (amplitude:float) (duration:float) =
+            match waveForm with
+            | "sin" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.sinWave frequency amplitude i)
+            | "triangle" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.triangleWave frequency amplitude i)
+            | "sawtooth" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.sawWave frequency amplitude i)
+            | "square" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.squareWave frequency amplitude i)
+            | _ -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.squareWave frequency amplitude i)
 
-    //let result = read (File.Open("toneSquare.wav", FileMode.Open))
 
-        write stream data3
+        let saveFile wave (filePath:string) =
+            let waveBites = wave |> fusedData |> toBytes
+
+            let stream = File.Create($"{filePath}")
+            SoundPlayer.write stream waveBites

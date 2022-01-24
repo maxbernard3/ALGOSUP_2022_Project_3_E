@@ -4406,19 +4406,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/fernandezaurelien/.nuget/packages/": {}
+    "/Users/maxbernard/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
+      "projectUniqueName": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
       "projectName": "Systhetizer.test",
-      "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
-      "packagesPath": "/Users/fernandezaurelien/.nuget/packages/",
-      "outputPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/obj/",
+      "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/Systhetizer.test.fsproj",
+      "packagesPath": "/Users/maxbernard/.nuget/packages/",
+      "outputPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Systhetizer.test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/fernandezaurelien/.config/NuGet/NuGet.Config"
+        "/Users/maxbernard/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -4430,8 +4430,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
-              "projectPath": "/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj"
+            "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj": {
+              "projectPath": "/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/Synthetizer.fsproj"
             }
           }
         }
@@ -4482,7 +4482,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

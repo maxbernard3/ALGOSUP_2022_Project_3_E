@@ -1,4 +1,4 @@
-﻿namespace Synth
+﻿namespace Synthetizer.lib
     module SoundPlayer=
 
         open System
@@ -6,12 +6,10 @@
         open SFML.Audio
         open System.Threading
 
-        
-
-        let sampleRate = 44100 // In Hertz
+        let sampleRate = GlobalVar.bytesPerSample
 
         let write stream (data:byte[]) =
-            let writer = new BinaryWriter(stream)
+            use writer = new BinaryWriter(stream)
             // RIFF
             writer.Write("RIFF"B)
             let size = 36 + data.Length in writer.Write(size)
@@ -32,6 +30,7 @@
 
 
             // play is the function that play the contain of data
+
         type PlaySound() =
             member x.play stream =
                     let buffer = new SoundBuffer(stream:Stream)
@@ -41,13 +40,14 @@
                     do while sound.Status = SoundStatus.Playing do 
                         Thread.Sleep(1)
         
-        let p = new PlaySound()
+        
     
         // convert is used to convert data's bytes in stream
     
         let convert = new MemoryStream()
-        write convert data3
     
         // Call the play function with convert values
-    
-        p.play(convert)
+        let playData data =
+            write convert data
+            let p = new PlaySound()
+            p.play(convert)
