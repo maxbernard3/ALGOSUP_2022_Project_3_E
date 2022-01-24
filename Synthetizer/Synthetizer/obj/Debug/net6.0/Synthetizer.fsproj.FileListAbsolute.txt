@@ -200,3 +200,5 @@ C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Syn
 /Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-System.dll
 /Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Window.dll
 /Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/openal32.dll
+/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfoInputs.cache
+/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfo.fs

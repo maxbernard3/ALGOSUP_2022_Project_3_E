@@ -4,19 +4,19 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/maxbernard/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/maxbernard/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/fernandezaurelien/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/fernandezaurelien/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/Users/maxbernard/.nuget/packages/" />
+    <SourceRoot Include="/Users/fernandezaurelien/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSFML_Net Condition=" '$(PkgSFML_Net)' == '' ">/Users/maxbernard/.nuget/packages/sfml.net/2.5.0</PkgSFML_Net>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/maxbernard/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
+    <PkgSFML_Net Condition=" '$(PkgSFML_Net)' == '' ">/Users/fernandezaurelien/.nuget/packages/sfml.net/2.5.0</PkgSFML_Net>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/fernandezaurelien/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

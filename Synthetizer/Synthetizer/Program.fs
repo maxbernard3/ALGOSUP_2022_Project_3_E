@@ -1,5 +1,6 @@
 namespace Synth
     module Waveform =
+      
         open System
         open System.IO
         open SFML.Audio
@@ -19,8 +20,13 @@ namespace Synth
             x
 
         let makeChord waves =
-            let x = waves |>List.sum
-            x/float waves.Length 
+            let returnArr = Array.create (Array.get waves 0 |>   Array.length) 0.
+            for i=0 to ((Array.get waves 0 |> Array.length)-1) do
+                let result = Array.create (Array.length waves) 0.
+        
+                waves |> Array.iteri (fun j x -> Array.fill result j 1 (Array.get     (Array.get waves j) i))
+                Array.fill returnArr i 1 (Array.average result)
+            returnArr
 
         let sinWave frequence amplitude t  =
             amplitude * sin (2. * pi * float t * frequence / float sampleRate)
@@ -62,37 +68,37 @@ namespace Synth
 
         let sample x = (x + 1.)/2. * 255. |> byte 
         let data1 = Array.init (int (float sampleRate * duration)) (fun i -> triangleWave 200. 1. i |> sample)
-        let data2 = Array.init (int (float sampleRate * duration)) (fun i -> sinWave 500. 1. i |> sample)
-        let data3 = fusedData [|data1; data2|]
+        let data2 = Array.init (int (float sampleRate * duration)) (fun i -> sinWave 500. 1. i )
+        let data3 =  Echo.echo data2 1. 1.1 0.2 3 |>Array.map (fun x -> sample x)
 
-        let stream = File.Create("fusedTone.wav")
+        let stream = File.Create("../../../test.wav")
 
         //let result = read (File.Open("toneSquare.wav", FileMode.Open))
 
         write stream data3
 
-        type PlaySound() =
+        //type PlaySound() =
         
-            // play is the function that play the contain of data
+        //    // play is the function that play the contain of data
         
-                member x.play stream =
-                    let buffer = new SoundBuffer(stream:Stream)
-                    let sound = new Sound(buffer)
-                    sound.Play()
+        //        member x.play stream =
+        //            let buffer = new SoundBuffer(stream:Stream)
+        //            let sound = new Sound(buffer)
+        //            sound.Play()
           
-                    do while sound.Status = SoundStatus.Playing do 
-                        Thread.Sleep(1)
+        //            do while sound.Status = SoundStatus.Playing do 
+        //                Thread.Sleep(1)
         
-        let p = new PlaySound()
+        //let p = new PlaySound()
     
-        // convert is used to convert data's bytes in stream
+        //// convert is used to convert data's bytes in stream
     
-        let convert = new MemoryStream()
-        write convert data3
+        //let convert = new MemoryStream()
+        //write convert data3
     
-        // Call the play function with convert values
+        //// Call the play function with convert values
     
-        p.play(convert)
+        //p.play(convert)
 
         //let Reverb wave =
         //    let delayMilliseconds = 500 // half a second
