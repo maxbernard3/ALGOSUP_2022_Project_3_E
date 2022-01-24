@@ -73,19 +73,34 @@ namespace Synth
 
         write stream data3
 
-        module fourStageEnveloppe =
+        module Envelope =
+            let floatSampleRate = float sampleRate
+
+            let attack amplitude A time i =
+                let fsr = float sampleRate
+                let x = fsr*A*time
+                (amplitude/x) * float i
+            let decay amplitude decayVar D time i =
+                let fsr = float sampleRate
+                let y = fsr*D*time
+                amplitude - decayVar/y* float i
+            let sustain amplitude S =
+                amplitude*S
+            let release amplitude decayVar A time i =
+                let fsr = float sampleRate
+                let z = fsr*A*time
+                (amplitude - decayVar) - 0.5/z* i
             
-            let enveloppe (A:float) (D:float) (S:float) (R:float) (amplitude:float) (time:float) (decayVar:float) =
-            
-                let floatSampleRate = float sampleRate
-                let Attack = Array.init (int (floatSampleRate*A*time)) (fun i -> amplitude/(floatSampleRate*A*time)* float i)
-                let Decay = Array.init (int (floatSampleRate*D*time)) (fun i -> amplitude - decayVar/(floatSampleRate*D*time)* float i)
-                let Sustain = Array.init (int (time*(floatSampleRate - floatSampleRate*R- floatSampleRate*D - floatSampleRate*A))) (fun _ -> S*amplitude)
-                let Release = Array.init (int (floatSampleRate*A*time)) (fun i -> (amplitude - decayVar) - 0.5/(floatSampleRate*A*time)* float i)
-                let finalData = fusedData[|Attack; Decay; Sustain; Release|]
+            let envelope (A:float) (D:float) (S:float) (R:float) (amplitude:float) (time:float) (decayVar:float) =
+
+                let attackArray = Array.init (int (floatSampleRate*A*time)) (fun i -> attack amplitude A time i)
+                let decayArray = Array.init (int (floatSampleRate*D*time)) (fun i -> decay amplitude decayVar D time i)
+                let sustainArray = Array.init (int (time*(floatSampleRate - floatSampleRate*R - floatSampleRate*D - floatSampleRate*A))) (fun _ -> sustain amplitude S)
+                let releaseArray = Array.init (int (floatSampleRate*A*time)) (fun i -> release amplitude decayVar A time i )
+                let finalData = fusedData[|attackArray; decayArray; sustainArray; releaseArray|]
                 finalData
         
-            let finalData = enveloppe 0.1 0.05 0.5 0.5 1. 0.5 0.5
+            let finalData = envelope 0.1 0.05 0.5 0.5 1. 0.5 0.5
         
             finalData |> Chart.Line |> Chart.Show
 
