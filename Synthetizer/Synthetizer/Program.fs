@@ -4,6 +4,8 @@ namespace Synth
         open System.IO
         open SFML.Audio
         open System.Threading
+        open XPlot.Plotly
+        open SFML
 
         let pi = Math.PI
         let sampleRate = 44100 // In Hertz
@@ -71,17 +73,48 @@ namespace Synth
 
         write stream data3
 
-        type PlaySound() =
+        module Envelope =
+            let floatSampleRate = float sampleRate
+
+            let attack amplitude A time i =
+                let fsr = float sampleRate
+                let x = fsr*A*time
+                (amplitude/x) * float i
+            let decay amplitude decayVar D time i =
+                let fsr = float sampleRate
+                let y = fsr*D*time
+                amplitude - decayVar/y* float i
+            let sustain amplitude S =
+                amplitude*S
+            let release amplitude decayVar A time i =
+                let fsr = float sampleRate
+                let z = fsr*A*time
+                (amplitude - decayVar) - 0.5/z* i
+            
+            let envelope (A:float) (D:float) (S:float) (R:float) (amplitude:float) (time:float) (decayVar:float) =
+
+                let attackArray = Array.init (int (floatSampleRate*A*time)) (fun i -> attack amplitude A time i)
+                let decayArray = Array.init (int (floatSampleRate*D*time)) (fun i -> decay amplitude decayVar D time i)
+                let sustainArray = Array.init (int (time*(floatSampleRate - floatSampleRate*R - floatSampleRate*D - floatSampleRate*A))) (fun _ -> sustain amplitude S)
+                let releaseArray = Array.init (int (floatSampleRate*A*time)) (fun i -> release amplitude decayVar A time i )
+                let finalData = fusedData[|attackArray; decayArray; sustainArray; releaseArray|]
+                finalData
+        
+            let finalData = envelope 0.1 0.05 0.5 0.5 1. 0.5 0.5
+        
+            finalData |> Chart.Line |> Chart.Show
+
+         type PlaySound() =
         
             // play is the function that play the contain of data
         
-                member x.play stream =
-                    let buffer = new SoundBuffer(stream:Stream)
-                    let sound = new Sound(buffer)
-                    sound.Play()
-          
-                    do while sound.Status = SoundStatus.Playing do 
-                        Thread.Sleep(1)
+            member x.play stream =
+                let buffer = new SoundBuffer(stream:Stream)
+                let sound = new Sound(buffer)
+                sound.Play()
+            
+                do while sound.Status = SoundStatus.Playing do 
+                    Thread.Sleep(1)
         
         let p = new PlaySound()
     
@@ -93,15 +126,3 @@ namespace Synth
         // Call the play function with convert values
     
         p.play(convert)
-
-        //let Reverb wave =
-        //    let delayMilliseconds = 500 // half a second
-        //    int delaySamples = 
-        //        (int)((float)delayMilliseconds * sampleRate/1000)
-        //    float decay = 0.5f;
-        //    for (int i = 0; i < buffer.length - delaySamples; i++)
-        //    {
-        //        // WARNING: overflow potential
-        //        buffer[i + delaySamples] += (short)((float)buffer[i] * decay);
-        //    }
-        

@@ -51,5 +51,24 @@ let sawtoothWaveTest () =
     let result = Waveform.sawWave 42. 5.7 12
     Assert.AreEqual(float32 0.13028571, float32 result)
 
+[<Test>]
+let attackTest () =
+    let result = Waveform.Envelope.attack 1. 0.1 0.5 1
+    Assert.AreEqual(float32 4.5351473922902494331065759637188E-4, float32 result)
+
+[<Test>]
+let decayTest () = 
+    let result = Waveform.Envelope.decay 1. 0.5 0.05 0.5 1
+    Assert.AreEqual(float32 0.99954648526077097505668934240363, float32 result)
+
+[<Test>]
+let sustainTest () =
+    let result = Waveform.Envelope.sustain 1. 0.5
+    Assert.AreEqual(float32 0.5, float32 result)
+
+[<Test>]
+let releaseTest () =
+    let result = Waveform.Envelope.release 1. 0.5 0.1 0.5 1
+    Assert.AreEqual(float32 0.49977324263038548752834467120181, float32 result)
 
     
