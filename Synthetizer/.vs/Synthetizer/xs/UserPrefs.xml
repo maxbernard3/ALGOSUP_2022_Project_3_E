@@ -2,13 +2,24 @@
   <MonoDevelop.Ide.ItemProperties.Synthetizer PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer/Program.fs">
     <Files>
-      <File FileName="Systhetizer.test/UnitTest1.fs" Line="16" Column="56" />
-      <File FileName="Synthetizer/Program.fs" Line="108" Column="1" />
+      <File FileName="Synthetizer/Program.fs" Line="8" Column="39" IsPinned="True" />
+      <File FileName="Synthetizer.lib/main.fs" Line="21" Column="116" IsPinned="True" />
+      <File FileName="Systhetizer.test/UnitTest1.fs" Line="1" Column="1" />
+      <File FileName="Synthetizer.lib/Waves.fs" Line="6" Column="1" />
+      <File FileName="Synthetizer.lib/Filters.fs" Line="14" Column="10" />
+      <File FileName="Synthetizer.lib/SoundPlayer.fs" Line="53" Column="28" />
+      <File FileName="Synthetizer.lib/Library.fs" Line="7" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Synthetizer" expanded="True" selected="True" />
+          <Node name="Synthetizer" expanded="True">
+            <Node name="Synthetizer" expanded="True">
+              <Node name="Program.fs" selected="True" />
+            </Node>
+            <Node name="Synthetizer.lib" expanded="True" />
+            <Node name="Systhetizer.test" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -21,6 +32,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Systhetizer.test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

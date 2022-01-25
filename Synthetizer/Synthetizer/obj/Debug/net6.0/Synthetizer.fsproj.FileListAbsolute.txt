@@ -1,0 +1,207 @@
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.deps.json
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.runtimeconfig.json
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.pdb
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/FSharp.Core.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/cs/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/de/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/es/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/fr/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/it/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ja/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ko/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pl/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pt-BR/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ru/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/tr/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.AssemblyReference.cache
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfoInputs.cache
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfo.fs
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.CopyComplete
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.pdb
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.genruntimeconfig.cache
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.exe
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.deps.json
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.runtimeconfig.json
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.pdb
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/FSharp.Core.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/cs/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/de/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/es/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/fr/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/it/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ja/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ko/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pl/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pt-BR/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ru/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/tr/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.AssemblyReference.cache
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfoInputs.cache
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfo.fs
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.CopyComplete
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.dll
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.pdb
+C:/Users/PaulNOWAK/Desktop/Algosup/Computering/Projects/Project sound synthesis/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.genruntimeconfig.cache
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.exe
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.deps.json
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.runtimeconfig.json
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.pdb
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/FSharp.Core.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Audio.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Graphics.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.System.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Window.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/cs/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/de/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/es/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/fr/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/it/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ja/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ko/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pl/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/pt-BR/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/ru/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/tr/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hans/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/zh-Hant/FSharp.Core.resources.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so.2.5
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so.2.5.1
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Audio.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Graphics.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-System.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Window.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/openal32.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Audio.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Graphics.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-System.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Window.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/openal32.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.AssemblyReference.cache
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfoInputs.cache
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfo.fs
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.fsproj.CopyComplete
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.dll
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.pdb
+C:/AlgoSup/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.genruntimeconfig.cache
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Audio.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Graphics.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.System.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/SFML.Window.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libcsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-audio.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-graphics.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-system.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/alpine-x64/native/libsfml-window.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libcsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-audio.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-graphics.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-system.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/debian-x64/native/libsfml-window.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libcsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-audio.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-graphics.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-system.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so.2.5
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/fedora-x64/native/libsfml-window.so.2.5.1
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Audio.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Graphics.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-System.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/csfml-Window.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x64/native/openal32.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Audio.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Graphics.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-System.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/csfml-Window.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/runtimes/win-x86/native/openal32.dll
+/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfoInputs.cache
+/Users/fernandezaurelien/Projects/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/obj/Debug/net6.0/Synthetizer.AssemblyInfo.fs
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.lib.dll
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.lib.pdb
+/Users/maxbernard/Documents/GitHub/ALGOSUP_2022_Project_3_E/Synthetizer/Synthetizer/bin/Debug/net6.0/Synthetizer.lib.xml
