@@ -28,6 +28,10 @@
 
 
             // play is the function that play the contain of data
+<<<<<<< HEAD:Synthetizer/Synthetizer.lib/main.fs
+=======
+
+>>>>>>> main:Synthetyser/Synthetizer.lib/main.fs
 
 
         let toBytes i = i |> Array.map(fun x -> (x + 1.)/2. * 255. |> byte)
