@@ -70,5 +70,3 @@
 //let releaseTest () =
 //    let result = Waveform.Envelope.release 1. 0.5 0.1 0.5 1
 //    Assert.AreEqual(float32 0.49977324263038548752834467120181, float32 result)
-
-    

@@ -24,5 +24,5 @@
         let saveFile wave (filePath:string) =
             let waveBites = wave |> fusedData |> toBytes
 
-            let stream = File.Create($"{filePath}")
+            let stream = File.Create(@$"{filePath}")
             SoundPlayer.write stream waveBites

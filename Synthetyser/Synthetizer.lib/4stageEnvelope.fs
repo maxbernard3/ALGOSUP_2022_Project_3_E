@@ -1,5 +1,5 @@
 ﻿namespace Synthetizer.lib
-    module Envelope =
+    //module Envelope =
 
         //open XPlot.Plotly
         //let sampleRate = GlobalVar.bytesPerSample
