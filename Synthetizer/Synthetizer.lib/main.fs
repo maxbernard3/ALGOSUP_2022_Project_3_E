@@ -30,9 +30,6 @@
             // play is the function that play the contain of data
 
 
-        let fusedData fullwave = 
-            fullwave |> Array.concat
-
         let toBytes i = i |> Array.map(fun x -> (x + 1.)/2. * 255. |> byte)
 
         let CreateWave (waveForm:string) (frequency:float) (amplitude:float) (duration:float) =
@@ -45,7 +42,7 @@
 
 
         let saveFile wave (filePath:string) =
-            let waveBites = wave |> fusedData |> toBytes
+            let waveBites = wave |> GlobalFunc.fusedData |> toBytes
 
             let stream = File.Create(@$"{filePath}")
             write stream waveBites
