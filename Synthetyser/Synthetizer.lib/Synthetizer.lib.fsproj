@@ -10,8 +10,8 @@
     <Compile Include="Waves.fs" />
     <Compile Include="Filters.fs" />
     <Compile Include="4stageEnvelope.fs" />
-    <Compile Include="SoundPlayer.fs" />
     <Compile Include="main.fs" />
+    <Compile Include="SoundPlayer.fs" />
   </ItemGroup>
 
   <ItemGroup>
