@@ -10,3 +10,7 @@
 
         let fusedData fullwave = 
             fullwave |> Array.concat
+
+        let delayedWave time allWaves = 
+            let numberOfZeros = Array.init time (fun _ -> 0.)
+            Array.append numberOfZeros allWaves
