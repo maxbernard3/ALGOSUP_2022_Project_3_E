@@ -20,9 +20,12 @@
                 Array.fill returnArr i 1 (Array.average result)
             returnArr
 
-        let echo (wave:array<float>) (startEcho:float) (endEcho:float) (delay:float) =
+        let reduceAmplitude (reduction:float) anyWaves =
+            let reducedAmp = Array.map (fun x -> x / reduction)
+            reducedAmp anyWaves
 
-            let start = startEcho * float sampleRate |> int
+        let echo (wave:array<float>) (startEcho:float) (endEcho:float) (delay:float) (numberOfEcho:int)=
+            let start= startEcho * float sampleRate |> int
             let originalSound= (endEcho - startEcho) * float sampleRate |> int
             let Delay = delay * float sampleRate |> int
 

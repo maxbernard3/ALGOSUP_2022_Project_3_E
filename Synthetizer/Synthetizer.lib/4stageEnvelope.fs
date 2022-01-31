@@ -1,4 +1,4 @@
-﻿namespace Synthetizer.lib
+namespace Synthetizer.lib
     module Envelope =
         open System.Collections.Generic
 
