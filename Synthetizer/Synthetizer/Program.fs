@@ -19,6 +19,6 @@ module Sound1 =
     Main.saveFile [|EverySong|] "NewCombinedTone.wave"
     //example
     //sum 1st 4 value of envelope = time
-    let song3 = [| Envelope.envelope (Main.CreateWave "square" 600. 1. 1.5) 0.25 0.25 0.75 0.25 0.6 |] 
-
-    Main.saveFile song3 "square.wav"
+    let sin = [| Envelope.envelope (Main.CreateWave "sin" 500. 0.7 1.5) 0.2 0.3 0.5 0.5 0.6|] 
+    
+    Main.saveFile sin "sin.wav"

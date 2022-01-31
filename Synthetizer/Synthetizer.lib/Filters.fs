@@ -29,12 +29,12 @@
             let originalSound= (endEcho - startEcho) * float sampleRate |> int
             let Delay = delay * float sampleRate |> int
 
-            let totalOfWaves= float originalSound
+            let totalOfWaves = float originalSound
     
             let startAndDelay= Array.append [|for i in 0..  start do 0.|] [|for i in 0..Delay do 0.|]
             let mutable count =1.
             let echoSound= [|
-                for x in 0.. numberOfEcho do 
+                for x in 0.. 10 do 
                 for i in 0..  originalSound do  (wave.[start+i]* ( (100.-((float i/totalOfWaves)*100. ))/100.)/count ) 
                 for i in 0..Delay do 0.
                 count <- count+1.
