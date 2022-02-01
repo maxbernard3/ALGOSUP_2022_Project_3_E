@@ -1,8 +1,14 @@
 ﻿namespace Synthetizer.lib
+
+    open System.Numerics
+
     module Filters =
         open System
+        open MathNet.Numerics
+        open MathNet.Filtering
+        open MathNet.Numerics.IntegralTransforms
 
-        let sampleRate = GlobalVar.bytesPerSample
+        let sampleRate = GlobalVar.sampleRate
 
         let makeOverdrive multiplicator wave =
             let logic x =
@@ -49,4 +55,39 @@
                 gap <-[|for i in 0.. wave.Length-Echo.Length do 0.|]
                 let NewEcho= Array.append Echo gap
                 result <- makeChord[|wave;NewEcho|]
+            result
+
+        let Superpose (waves:float[][]) (start:float[]) (lengh:float) =
+
+            let table = Array.create 10 (Array.create (int(lengh*float sampleRate)) 0.0)
+            let tableHeight = Array.create (int(lengh*float sampleRate)) 0
+            let a = int (start.[1] * float sampleRate)
+            for i=0 to (waves.Length - 1) do
+                for j=0 to (waves.[i].Length - 1) do
+                    if table.[0].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[0] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (1)
+                    elif table.[1].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[1] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (2)
+
+            let sum (array:float[][]) (i:int) =
+                let result =
+                    array.[0].[i] +
+                    array.[1].[i] +
+                    array.[2].[i] +
+                    array.[3].[i] +
+                    array.[4].[i] +
+                    array.[5].[i] +
+                    array.[6].[i] +
+                    array.[7].[i] +
+                    array.[8].[i] +
+                    array.[9].[i]
+
+                result
+            
+            let result = Array.create (int(lengh*float sampleRate)) 0.
+            for i=0 to (table.[0].Length - 1) do
+                Array.set result i ((sum table i)/10.)
+
             result
