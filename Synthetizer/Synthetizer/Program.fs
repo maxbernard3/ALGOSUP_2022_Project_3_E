@@ -20,9 +20,176 @@ module Sound1 =
     //Main.saveFile [|EverySong|] "NewCombinedTone.wave"
     ////example
     ////sum 1st 4 value of envelope = time
-    let sqr = Notes.Note "square" "C6" 0.5 1.5
-    let test=  Notes.Note "sin" "C8" 0.5 1.5
-    let chord= Filters.makeChord[|sqr; test|]
     
-    Main.saveFile [|chord|] "note.wav"
+    let song=GlobalFunc.fusedData[|
+        //1
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //2
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //3
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //4
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //5
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //6
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //7
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //8
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G#4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G#4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G#4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //9
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //10
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //11
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "D#3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "F3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //12
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;Envelope.envelope (Notes.Note "sin" "A2" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A4" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "C5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "E5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        Envelope.envelope (Notes.Note "sin" "A5" 0.5 0.15)  0.03 0. 0.09 0.045 1.;
+        //13
+
+
+
+
+
+
+
+
+
+
+
+
+
+    |]
+
+    
+   
+    
+    Main.saveFile [|song|] "Doom.wav"
     
