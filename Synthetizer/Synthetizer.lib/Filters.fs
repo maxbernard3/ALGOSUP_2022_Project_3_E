@@ -59,7 +59,7 @@
 
         let Superpose (waves:float[][]) (start:float[]) (lengh:float) =
 
-            let table = Array.create 10 (Array.create (int(lengh*float sampleRate)) 0.0)
+            let table = Array.init 10 (fun x -> (Array.create (int(lengh*float sampleRate)) 0.0))
             let tableHeight = Array.create (int(lengh*float sampleRate)) 0
             let a = int (start.[1] * float sampleRate)
             for i=0 to (waves.Length - 1) do
@@ -70,6 +70,30 @@
                     elif table.[1].[(int(start.[i]*float sampleRate)) + j] = 0. then
                         Array.set table.[1] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
                         Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (2)
+                    elif table.[2].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[2] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (3)
+                    elif table.[3].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[3] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (4)
+                    elif table.[4].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[4] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (5)
+                    elif table.[5].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[5] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (6)
+                    elif table.[6].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[6] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (7)
+                    elif table.[7].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[7] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (8)
+                    elif table.[8].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[8] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (9)
+                    elif table.[9].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[9] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (10)
 
             let sum (array:float[][]) (i:int) =
                 let result =
@@ -88,6 +112,6 @@
             
             let result = Array.create (int(lengh*float sampleRate)) 0.
             for i=0 to (table.[0].Length - 1) do
-                Array.set result i ((sum table i)/10.)
+                Array.set result i ((sum table i)/float tableHeight.[i])
 
             result
