@@ -53,4 +53,4 @@ module Sound1 =
 
     //give the total time
     let sup = [|Filters.Superpose arr time 2.5|]
-    Main.saveFile sup "sup1234.wav"
+    Main.saveFile sup "sup5.wav"
