@@ -1,29 +1,13 @@
 ﻿namespace Synth
 open Synthetizer.lib
-
 module Sound1 =
 
-    //let song = Main.CreateWave "square" 200. 1. 1.5
+    //array of waveform
+    let arr = [|(Main.CreateWave "triangle" 500. 0.5 1.); (Main.CreateWave "square" 500. 0.5 1.); (Main.CreateWave "sin" 500. 0.7 1.)|]
 
-    //let song2 = Main.CreateWave "triangle" 200. 1. 1.5
+    //array of the time at wich the waveform start
+    let time = [| 0.0; 0.5; 1.5|]
 
-    //let nothing = Main.CreateWave "empty" 200. 1. 1.5
-
-    //let DelayedSong = GlobalFunc.delayedWave 8820 song
-
-    //let ReducedSong = Filters.reduceAmplitude 2. song
-
-    //let ChordSong = Filters.makeChord [|song; song2|]
-
-    //let EverySong = GlobalFunc.fusedData[|song; song2; nothing; DelayedSong; ReducedSong; ChordSong|]
-
-    //Main.saveFile [|EverySong|] "NewCombinedTone.wave"
-    ////example
-    ////sum 1st 4 value of envelope = time
-    
-    let song= Musics.imperialMarch
-
-    
-    
-    Main.saveFile [|song|] "test.wav"
-    
+    //give the total time
+    let sup = [|Filters.Superpose arr time 2.5|]
+    Main.saveFile sup "sup1234.wav"
