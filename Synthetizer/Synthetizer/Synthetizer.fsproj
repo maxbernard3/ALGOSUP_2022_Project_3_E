@@ -12,4 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Synthetizer.lib\Synthetizer.lib.fsproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MP3Sharp" Version="1.0.5" />
+  </ItemGroup>
 </Project>

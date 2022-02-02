@@ -20,6 +20,24 @@
                 Array.fill returnArr i 1 (Array.average result)
             returnArr
 
+        // TEST Merge function
+        let merge waves =
+            [|
+                let minLenth = waves |> Array.minBy (fun (x: float[]) -> x.Length)
+                for i in 0 .. minLenth.Length - 1 do
+                    for wave in waves do
+                        yield wave.[i]
+            |]
+
+        let sum waves =
+            let returnArr = Array.create (Array.get waves 0 |>   Array.length) 0.
+            for i=0 to ((Array.get waves 0 |> Array.length)-1) do
+                let result = Array.create (Array.length waves) 0.
+                waves |> Array.iteri (fun j x -> Array.fill result j 1 (Array.get(Array.get waves j) i))
+                Array.fill returnArr i 1 (Array.sum result)
+            returnArr
+        
+
         let reduceAmplitude (reduction:float) anyWaves =
             let reducedAmp = Array.map (fun x -> x / reduction)
             reducedAmp anyWaves

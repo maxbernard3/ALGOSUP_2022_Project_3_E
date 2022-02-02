@@ -2,23 +2,46 @@
 open Synthetizer.lib
 module Sound1 =
 
-    let song = Main.CreateWave "sin" 200. 1. 1.5
+    // Test simple signals
+    let sinSignal = Main.CreateWave "sin" 200. 1. 1.5
+    //Main.saveFile [|sinSignal|] "sinSignal.wav"
 
-    let song2 = Main.CreateWave "triangle" 200. 1. 1.5
+    let triangleSignal = Main.CreateWave "triangle" 200. 1. 1.5
+    //Main.saveFile [|triangleSignal|] "triangleSignal.wav"
+
+    let sawtoothSignal = Main.CreateWave "sawtooth" 200. 1. 1.5
+    //Main.saveFile [|sawtoothSignal|] "sawtoothSignal.wav"
+
+    let squareSignal = Main.CreateWave "square" 200. 1. 1.5
+    //Main.saveFile [|squareSignal|] "squareSignal.wav"
 
     let nothing = Main.CreateWave "empty" 200. 1. 1.5
+    //Main.saveFile [|nothing|] "nothing.wav"
 
-    let DelayedSong = GlobalFunc.delayedWave 8820 song
+    //Test modified songs
+    let DelayedTriangle = GlobalFunc.delayedWave 8820 triangleSignal
+    //Main.saveFile [|DelayedSin|] "DelayedSin.wav"
 
-    let ReducedSong = Filters.reduceAmplitude 2. song
+    let ReducedSin = Filters.reduceAmplitude 2. sinSignal
+    let ReducedTriangle = Filters.reduceAmplitude 2. triangleSignal
+    //Main.saveFile [|ReducedSin|] "ReducedSin.wav"
 
-    let ChordSong = Filters.makeChord [|song; song2|]
+    let ChordSinTriangle = Filters.makeChord [|sinSignal; triangleSignal|]
+    //Main.saveFile [|ChordSinTriangle|] "ChordSinTriangle.wav"
 
-    let EverySong = GlobalFunc.fusedData[|song; song2; nothing; DelayedSong; ReducedSong; ChordSong|]
+    //let EverySong = GlobalFunc.fusedData[|sinSignal; triangleSignal; nothing; DelayedSin; ReducedSin; ChordSinTriangle|]
+    //Main.saveFile [|EverySong|] "EverySong.wav"
+   
+    //REVERB TEST
+    let reducedDelayedTriangle = Filters.reduceAmplitude 4. DelayedTriangle
 
-    Main.saveFile [|EverySong|] "NewCombinedTone.wave"
-    //example
-    //sum 1st 4 value of envelope = time
-    let song3 = [| Envelope.envelope (Main.CreateWave "square" 600. 1. 1.5) 0.25 0.25 0.75 0.25 0.6 |] 
+    let mergeTriangleTest = Filters.merge [|triangleSignal; reducedDelayedTriangle|]
 
-    Main.saveFile song3 "square.wav"
+    let sumTriangleTest = Filters.sum [|ReducedTriangle; reducedDelayedTriangle|]
+    //Main.saveFile [|sumTriangleTest|] "sumTriangleTest2.wav"
+
+    //let dividedChord = Filters.reduceAmplitude 2. mergeTest
+    //Main.saveFile [|dividedChord|] "dividedChord.wav"
+
+    Mp3ConverterWav.convert2WAV @"C:\Users\PaulNOWAK\Desktop\Algosup\Computering\Projects\Project sound synthesis\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\sample.mp3"
+        @"C:\Users\PaulNOWAK\Desktop\Algosup\Computering\Projects\Project sound synthesis\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\sample.wav"
