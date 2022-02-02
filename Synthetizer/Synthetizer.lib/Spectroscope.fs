@@ -5,27 +5,25 @@ module Spectroscope =
     open System
     open System.IO
     open System.Threading
-    open 
+    open MathNet.Filtering
 
-    //module Spectrosope =
-    //    let dataS1 duration = Array.init (int (float 100. * duration)) (fun i -> triangleWave 200 1. i)
-    //    let dataS2 duration = Array.init (int (float 100. * duration)) (fun i -> sinWave 200 1. i)
-    //    let dataS3 duration = GlobalFunc.fusedData [|dataS1; dataS2|]
+    //let Spectrosope duration =
+    //    let dataS1 = Array.init (int (float 100. * duration)) (fun i -> Waves.triangleWave 200. 1. i)
+    //    let dataS2 = Array.init (int (float 100. * duration)) (fun i -> Waves.sinWave 200. 1. i)
+    //    GlobalFunc.fusedData [|dataS1; dataS2|]
 
-    //    //dataS3 |> Chart.Line |> Chart.Show
+        //dataS3 |> Chart.Line |> Chart.Show
 
-    //module lowPassFilter =
-    //   let dataS1 = Array.init (int (float sampleRate * duration)) (fun i -> triangleWave 200 1. i)
-       
-    //   let lowPass = IIR.IirCoefficients.LowPass(44100., 2000., 1.);
-    //   let filter = new IIR.OnlineIirFilter(lowPass);        
-    //   let processed = filter.ProcessSamples(dataS1);
+    let lowPassFilter (wave:float[]) (cutoff:float) (width:float) =
 
-    //   //processed |> Chart.Line |> Chart.Show
+       let lowPass = IIR.IirCoefficients.LowPass((float sampleRate), cutoff, width);
+       let filter = new IIR.OnlineIirFilter(lowPass);        
+       filter.ProcessSamples(wave);
 
-    //module highPassFilter =
-    //   let dataS1 = Array.init (int (float sampleRate * duration)) (fun i -> triangleWave 200 1. i)
-       
-    //   let highPass = IIR.IirCoefficients.HighPass(44100., 100., 1.);
-    //   let filter = new IIR.OnlineIirFilter(highPass);        
-    //   let processed = filter.ProcessSamples(dataS1);
+       //processed |> Chart.Line |> Chart.Show
+
+    let highPassFilter (wave:float[]) (cutoff:float) (width:float) =
+
+       let highPass = IIR.IirCoefficients.HighPass(44100., 100., 1.);
+       let filter = new IIR.OnlineIirFilter(highPass);        
+       filter.ProcessSamples(wave);

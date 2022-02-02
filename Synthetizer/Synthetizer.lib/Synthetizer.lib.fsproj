@@ -11,9 +11,9 @@
     <Compile Include="Filters.fs" />
     <Compile Include="4stageEnvelope.fs" />
     <Compile Include="Reverb.fs" />
+    <Compile Include="Spectroscope.fs" />
     <Compile Include="main.fs" />
     <Compile Include="SoundPlayer.fs" />
-    <Compile Include="Spectroscope.fs" />
   </ItemGroup>
 
   <ItemGroup>
