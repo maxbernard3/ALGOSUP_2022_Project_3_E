@@ -59,4 +59,8 @@ let envelopeTest () =
     Assert.AreEqual(float32 0.48, float32 result.[35788])
     Assert.AreEqual(float32 0.16936054421768707, float32 result.[2334])
 
-
+[<Test>]
+let EchoTest()=
+    let result =Filters.echo(Main.CreateWave "sin" 650. 0.8 2.) 0.25 0.75 0.2 2 0.5
+    Assert.AreEqual(float32 -0.749917626, float32 result.[20747])
+    Assert.AreEqual(float32  0.064745016 , float32 result.[60417])
