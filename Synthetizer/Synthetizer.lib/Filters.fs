@@ -24,29 +24,28 @@
             let reducedAmp = Array.map (fun x -> x / reduction)
             reducedAmp anyWaves
 
-        let echo (wave:array<float>) (startEcho:float) (endEcho:float) (delay:float) (numberOfEcho:int)=
+        let echo (wave:array<float>) (startEcho:float) (endEcho:float) (delay:float) (numberOfEcho:int) (decay:float)=
             let start= startEcho * float sampleRate |> int
             let originalSound= (endEcho - startEcho) * float sampleRate |> int
             let Delay = delay * float sampleRate |> int
 
-            let totalOfWaves = float originalSound
     
             let startAndDelay= Array.append [|for i in 0..  start do 0.|] [|for i in 0..Delay do 0.|]
             let mutable count =1.
             let echoSound= [|
-                for x in 0.. 10 do 
-                for i in 0..  originalSound do  (wave.[start+i]* ( (100.-((float i/totalOfWaves)*100. ))/100.)/count ) 
+                for x in 0.. numberOfEcho do 
+                for i in 0..  int (float originalSound* decay) do  (wave.[start+i]* ( (100.-(((float i)/(float originalSound*decay))*100. ))/100.)/count ) 
                 for i in 0..Delay do 0.
                 count <- count+1.
                 |]
                  
             let Echo: array<float> = Array.append startAndDelay echoSound
             let mutable result: array<float>= [||]
-            let mutable gap: array<float>= [||]
-            if(Echo.Length=wave.Length)then
+            if(Echo.Length=wave.Length) then
                 result <- makeChord[|wave;Echo|]
-            else
-                gap <-[|for i in 0.. wave.Length-Echo.Length do 0.|]
+            else 
+                let gap =[|for i in 0.. wave.Length-Echo.Length do 0.|]
                 let NewEcho= Array.append Echo gap
                 result <- makeChord[|wave;NewEcho|]
+           
             result
