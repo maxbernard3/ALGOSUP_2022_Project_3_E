@@ -45,5 +45,5 @@
         let saveFile wave (filePath:string) =
             let waveBites = wave |> GlobalFunc.fusedData |> toBytes
 
-            let stream = File.Create(@$"../../../{filePath}")
+            let stream = File.Create(@$"{filePath}")
             write stream waveBites

@@ -75,17 +75,8 @@
 
             let sum (array:float[][]) (i:int) =
                 let result =
-                    array.[0].[i] +
-                    array.[1].[i] +
-                    array.[2].[i] +
-                    array.[3].[i] +
-                    array.[4].[i] +
-                    array.[5].[i] +
-                    array.[6].[i] +
-                    array.[7].[i] +
-                    array.[8].[i] +
-                    array.[9].[i]
-
+                    array.[0].[i] + array.[1].[i] + array.[2].[i] + array.[3].[i] + array.[4].[i] +
+                    array.[5].[i] + array.[6].[i] + array.[7].[i] + array.[8].[i] + array.[9].[i]
                 result
             
             let result = Array.create (int(lengh*float sampleRate)) 0.
