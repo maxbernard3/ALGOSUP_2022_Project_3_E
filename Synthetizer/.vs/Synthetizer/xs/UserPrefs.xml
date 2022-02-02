@@ -1,14 +1,27 @@
-﻿<Properties StartupConfiguration="{51B1E91F-63A8-4638-A718-4B3FFAD72308}|Default">
+﻿<Properties StartupConfiguration="{1B7E555B-B0B8-4683-A03F-0BBB04CC5141}|Default">
   <MonoDevelop.Ide.ItemProperties.Synthetizer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer/Program.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Synthetizer.lib/Reverb.fs">
     <Files>
-      <File FileName="Systhetizer.test/UnitTest1.fs" Line="16" Column="56" />
-      <File FileName="Synthetizer/Program.fs" Line="108" Column="1" />
+      <File FileName="Synthetizer/Program.fs" Line="13" Column="31" IsPinned="True" />
+      <File FileName="Synthetizer.lib/Filters.fs" Line="96" Column="90" IsPinned="True" />
+      <File FileName="Synthetizer.lib/main.fs" Line="41" Column="16" />
+      <File FileName="../../../../Library/Caches/VisualStudio/17.0/Symbols/dotnet/fsharp/6d626ff0752a77d339f609b4d361787dc9ca93a5/src/fsharp/FSharp.Core/array.fs" Line="1218" Column="1" />
+      <File FileName="Synthetizer.lib/Library.fs" Line="4" Column="28" />
+      <File FileName="Synthetizer.test/UnitTest1.fs" Line="9" Column="1" />
+      <File FileName="Synthetizer.test/Program.fs" Line="1" Column="1" />
+      <File FileName="Synthetizer.test/FilterTest.fs" Line="1" Column="14" />
+      <File FileName="Synthetizer.lib/Reverb.fs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Synthetizer" expanded="True" selected="True" />
+          <Node name="Synthetizer" expanded="True">
+            <Node name="Synthetizer" expanded="True" />
+            <Node name="Synthetizer.lib" expanded="True">
+              <Node name="Reverb.fs" selected="True" />
+            </Node>
+            <Node name="Synthetizer.test" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -23,6 +36,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/maxbernard/Library/Caches/VisualStudio/17.0/Symbols/dotnet/fsharp/6d626ff0752a77d339f609b4d361787dc9ca93a5</String>
+  </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
