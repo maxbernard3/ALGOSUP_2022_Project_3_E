@@ -12,6 +12,7 @@
     <Compile Include="main.fs" />
     <Compile Include="SoundPlayer.fs" />
     <Compile Include="note.fs" />
+    <Compile Include="premadeMusics.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="SFML.Audio" Version="2.5.0">

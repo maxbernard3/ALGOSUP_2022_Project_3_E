@@ -1,8 +1,9 @@
 ﻿namespace Synthetizer.lib
+
     module Filters =
         open System
 
-        let sampleRate = GlobalVar.bytesPerSample
+        let sampleRate = GlobalVar.sampleRate
 
         let makeOverdrive multiplicator wave =
             let logic x =
@@ -34,9 +35,9 @@
             let mutable count =1.
             let echoSound= [|
                 for x in 0.. numberOfEcho do 
-                for i in 0..  int (float originalSound* decay) do  (wave.[start+i]* ( (100.-(((float i)/(float originalSound*decay))*100. ))/100.)/count ) 
-                for i in 0..Delay do 0.
-                count <- count+1.
+                    for i in 0..  int (float originalSound* decay) do  (wave.[start+i]* ( (100.-(((float i)/(float originalSound*decay))*100. ))/100.)/count ) 
+                    for i in 0..Delay do 0.
+                    count <- count+1.
                 |]
                  
             let Echo: array<float> = Array.append startAndDelay echoSound
@@ -49,3 +50,19 @@
                 result <- makeChord[|wave;NewEcho|]
            
             result
+
+
+        let frequence = 200.
+        let amplitude = 1.
+        let time = 2.85* float sampleRate
+        let fstWave = amplitude * sin (2. * Math.PI  * time * frequence / float sampleRate)
+        let reverb (wave:float[]) (i:float) = 
+                let mutable sndWave = wave
+                let mutable sndAmpl = amplitude
+                while sndAmpl * i > 0.1 do
+                    sndAmpl <- sndAmpl-0.01
+                    let rep = Array.init (int time) (fun i -> sndAmpl * sin((2. * Math.PI * frequence * float i) / float sampleRate))
+                    let newWave =Array.concat[|rep|]
+                    sndWave <- newWave
+                sndWave
+            
