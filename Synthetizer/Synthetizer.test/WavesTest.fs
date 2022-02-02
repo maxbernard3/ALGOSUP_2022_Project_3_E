@@ -1,4 +1,4 @@
-﻿module Systhetizer.test
+﻿module Waves.test
 
 open Synthetizer.lib
 open NUnit.Framework
@@ -50,13 +50,5 @@ let sawtoothWaveTest () =
 
     let result = Waves.sawWave 42. 5.7 12
     Assert.AreEqual(float32 0.13028571, float32 result)
-
-[<Test>]
-let envelopeTest () =
-    let result = Envelope.envelope (Main.CreateWave "square" 650. 8. 1.5) 0.25 0.25 0.75 0.25 0.6
-
-    Assert.AreEqual(float32 0.018866213151927439, float32 result.[26])
-    Assert.AreEqual(float32 4.8, float32 result.[35788])
-    Assert.AreEqual(float32 1.6936054421768707, float32 result.[2334])
 
 

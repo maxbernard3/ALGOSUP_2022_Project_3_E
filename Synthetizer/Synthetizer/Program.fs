@@ -45,3 +45,12 @@ module Sound1 =
 
     Mp3ConverterWav.convert2WAV @"C:\Users\PaulNOWAK\Desktop\Algosup\Computering\Projects\Project sound synthesis\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\sample.mp3"
         @"C:\Users\PaulNOWAK\Desktop\Algosup\Computering\Projects\Project sound synthesis\ALGOSUP_2022_Project_3_E\Synthetizer\Synthetizer\sample.wav"
+    //array of waveform
+    let arr = [|(Main.CreateWave "triangle" 500. 0.5 1.); (Main.CreateWave "square" 500. 0.5 1.); (Main.CreateWave "sin" 500. 0.7 1.)|]
+
+    //array of the time at wich the waveform start
+    let time = [| 0.0; 0.5; 1.5|]
+
+    //give the total time
+    let sup = [|Filters.Superpose arr time 2.5|]
+    Main.saveFile sup "sup1234.wav"
