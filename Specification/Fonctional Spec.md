@@ -25,7 +25,7 @@ This project is inspired by Sonic Pi (https://sonic-pi.net/) and other live codi
 
 This program is able to generate 4 types of waveforms: Sinus, Triangle, Sawtooth and Square. 
 
-![Wave](https://en.wikipedia.org/wiki/Waveform#/media/File:Waveforms.svg)
+![Wave](../images/Waveforms.png)
 
 They can have different types of audible frequencies and we will be using these mathematical formulas to create them:
 
