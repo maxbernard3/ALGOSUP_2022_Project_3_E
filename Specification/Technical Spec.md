@@ -71,7 +71,8 @@ The empty waveform could be also useful for creating some combinations:
 
 #### Generate a sound file
 
-To generate a sound file, we need to convert the original wave to a byte array. So, before generating our sound file, we have to create a function, which does it. Then, we have to create a second function, which convert an array of bytes to a type stream, that can then be iread by the console.
+To generate a sound file, we need to convert the original wave to a byte array. So, before generating our sound file, we have to create a function, which does it.
+Then, we have to create a second function, which convert an array of bytes to a type stream, that can then be iread by the console.
 
 ### Save Waveforms
 
