@@ -66,9 +66,12 @@ We have to generate 4 types of waveforms :
     - Sawtooth: amplitude * float (sign (2 * pi * time * frequence/float sampleRate))
     - Square: 2 * amplitude * asin (2 * pi * time * frequence/sampleRate) / pi
 
+The empty waveform could be also useful for creating some combinations:
+    -Empty: 0.
+
 #### Generate a sound file
 
-To generate a sound file, we need to convert the original wave to a byte array. 
+To generate a sound file, we need to convert the original wave to a byte array. So, before generating our sound file, we have to create a function, which does it. Then, we have to create a second function, which convert an array of bytes to a type stream, that can then be iread by the console.
 
 ### Save Waveforms
 
@@ -80,8 +83,10 @@ We have to create a function to read the previous .wav file created but we also 
 
 ### Effects
 
-An effect to cut the amplitude just dividing the value of the amplitude by an input value to reduce/increase it
-amplitud
+An effect to cut the amplitude just dividing the value of the amplitude by an input value to reduce/increase it:
+amplitude/x
+with x that is an input value for the user
+
 #### Overdrive
 a function that detect if a point on the waveform is within a certain threshold or not and if it is higher (or lower) than the threshold it set the output as the limit
 ```
