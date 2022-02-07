@@ -24,6 +24,6 @@ module Spectroscope =
 
     let highPassFilter (wave:float[]) (cutoff:float) (width:float) =
 
-       let highPass = IIR.IirCoefficients.HighPass(44100., 100., 1.);
+       let highPass = IIR.IirCoefficients.HighPass((float sampleRate), cutoff, width);
        let filter = new IIR.OnlineIirFilter(highPass);        
        filter.ProcessSamples(wave);
