@@ -1,54 +1,74 @@
 ﻿module Waves.test
 
 open Synthetizer.lib
+open System
 open NUnit.Framework
 
 [<SetUp>]
 let Setup () =
     ()
+let sampleRate = GlobalVar.sampleRate
 
 [<Test>]
 let sinWaveformTest () =
-    let result = Waves.sinWave 90. 60.3 400
-    Assert.AreEqual(float32 -55.13908, float32 result)
+    let random = Random()
+    let redundency = 100
 
-    let result = Waves.sinWave 9. 62.8 32
-    Assert.AreEqual(float32 2.57615232, float32 result)
+    let time = Array.init redundency (fun i -> 1.1 + random.NextDouble()*2.)
+    let amplitudeRand = Array.init redundency (fun i -> random.NextDouble())
+    let freqRand = Array.init redundency (fun i -> random.NextDouble()*1000.)
 
-    let result = Waves.sinWave 42. 5.7 0
-    Assert.AreEqual(float32 0., float32 result)
+    let resultSin = Array.init redundency (fun i -> Main.CreateWave "sin" freqRand.[i] amplitudeRand.[i] time.[i])
+
+    for i=0 to (redundency-1) do
+        Assert.IsTrue(resultSin.[i].[0] < resultSin.[i].[int((float sampleRate/freqRand.[i])/8.)])
+        Assert.IsTrue(resultSin.[i].[int((float sampleRate/freqRand.[i])/2.)] > resultSin.[i].[int((float sampleRate/freqRand.[i])/4.)*3])
 
 [<Test>]
 let triangleWaveTest () =
-    let result = Waves.triangleWave 90. 60.3 23
-    Assert.AreEqual(float32 11.3216324, float32 result)
+    let random = Random()
+    let redundency = 100
 
-    let result = Waves.triangleWave 9. 62.8 34
-    Assert.AreEqual(float32 1.74302042, float32 result)
+    let time = Array.init redundency (fun i -> 1.1 + random.NextDouble()*2.)
+    let amplitudeRand = Array.init redundency (fun i -> random.NextDouble())
+    let freqRand = Array.init redundency (fun i -> random.NextDouble()*1000.)
 
-    let result = Waves.triangleWave 42. 5.7 356
-    Assert.AreEqual(float32 3.66971421, float32 result)
+    let resultSin = Array.init redundency (fun i -> Main.CreateWave "triangle" freqRand.[i] amplitudeRand.[i] time.[i])
+
+    for i=0 to (redundency-1) do
+        Assert.IsTrue(resultSin.[i].[0] < resultSin.[i].[int((float sampleRate/freqRand.[i])/8.)])
+        Assert.IsTrue(resultSin.[i].[int((float sampleRate/freqRand.[i])/2.)] > resultSin.[i].[int((float sampleRate/freqRand.[i])/4.)*3])
 
 [<Test>]
 let squareWaveTest () =
-    let result = Waves.squareWave 90. 60.3 333
-    Assert.AreEqual(float32 -60.3, float32 result)
+    let random = Random()
+    let redundency = 100
 
-    let result = Waves.squareWave 9. 62.8 921
-    Assert.AreEqual(float32 62.8, float32 result)
+    let time = Array.init redundency (fun i -> 1.1 + random.NextDouble()*2.)
+    let amplitudeRand = Array.init redundency (fun i -> random.NextDouble())
+    let freqRand = Array.init redundency (fun i -> random.NextDouble()*1000.)
 
-    let result = Waves.squareWave 42. 5.7 1500
-    Assert.AreEqual(float32 5.7, float32 result)
+    let resultSin = Array.init redundency (fun i -> Main.CreateWave "square" freqRand.[i] amplitudeRand.[i] time.[i])
+
+    for i=0 to (redundency-1) do
+        Assert.AreEqual(amplitudeRand.[i] ,resultSin.[i].[int((float sampleRate/freqRand.[i])/8.)])
+        Assert.AreEqual(amplitudeRand.[i] ,resultSin.[i].[int((float sampleRate/freqRand.[i])/4.)])
+        Assert.AreEqual((-1.*amplitudeRand.[i]) ,resultSin.[i].[int((float sampleRate/freqRand.[i])/4.)*3])
+        Assert.AreEqual((-1.*amplitudeRand.[i]) ,resultSin.[i].[int((float sampleRate/freqRand.[i])/8.)*7])
 
 [<Test>]
 let sawtoothWaveTest () =
-    let result = Waves.sawWave 90. 60.3 444
-    Assert.AreEqual(float32 -11.3216324, float32 result)
+    let random = Random()
+    let redundency = 100
 
-    let result = Waves.sawWave 9. 62.8 642
-    Assert.AreEqual(float32 16.4561634, float32 result)
+    let time = Array.init redundency (fun i -> 1.1 + random.NextDouble()*2.)
+    let amplitudeRand = Array.init redundency (fun i -> random.NextDouble())
+    let freqRand = Array.init redundency (fun i -> random.NextDouble()*1000.)
 
-    let result = Waves.sawWave 42. 5.7 12
-    Assert.AreEqual(float32 0.13028571, float32 result)
+    let resultSin = Array.init redundency (fun i -> Main.CreateWave "sawtooth" freqRand.[i] amplitudeRand.[i] time.[i])
+
+    for i=0 to (redundency-1) do
+        Assert.IsTrue(resultSin.[i].[0] < resultSin.[i].[int((float sampleRate/freqRand.[i])/8.)])
+        Assert.IsTrue(resultSin.[i].[int((float sampleRate/freqRand.[i])/2.)] > resultSin.[i].[int((float sampleRate/freqRand.[i])/4.)*3])
 
 

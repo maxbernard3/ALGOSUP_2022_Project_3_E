@@ -18,7 +18,7 @@ namespace Synthetizer.lib
             for i=0 to (int(sustainVar*float sampleRate) - 1) do
                 sustain.Add(wave.[int (float sampleRate * (decayVar + attackVar)) + i] * hold)
 
-            let release = Array.create (int (float sampleRate * releaseVar) + 10) 0.
+            let release = Array.create (int (float sampleRate * releaseVar) + 4) 0.
             for i=(int(releaseVar*float sampleRate) - 1) downto 1 do
                 let j = int (float sampleRate * releaseVar) - i
                 let waves = wave.[int (float sampleRate * (decayVar + attackVar + sustainVar)) + i]
