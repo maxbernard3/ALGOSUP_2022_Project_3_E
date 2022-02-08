@@ -4,8 +4,7 @@
         open System
         let sampleRate = GlobalVar.sampleRate
 
-        let emptyWave frequence amplitude t =
-            0.
+        
 
         let sinWave frequence amplitude t  =
             amplitude * sin (2. * Math.PI * float t * frequence / float sampleRate)

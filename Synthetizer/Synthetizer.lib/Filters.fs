@@ -4,9 +4,6 @@
 
     module Filters =
         open System
-        open MathNet.Numerics
-        open MathNet.Filtering
-        open MathNet.Numerics.IntegralTransforms
 
         let sampleRate = GlobalVar.sampleRate
 
@@ -56,6 +53,8 @@
                 let NewEcho= Array.append Echo gap
                 result <- makeChord[|wave;NewEcho|]
             result
+
+
 
         let Superpose (waves:float[][]) (start:float[]) (lengh:float) =
 
@@ -115,3 +114,38 @@
                 Array.set result i ((sum table i)/float tableHeight.[i])
 
             result
+
+
+        let reverb (wave:float[]) (frequency:float) (startFlange:float) (stopFlange:float) (decay:int)   = 
+            let mutable sndWave = wave
+            let period = 1./frequency
+            let amplitude = wave|> Array.max
+            let mutable sndAmpl = amplitude
+            let mutable rep =[||]
+            let start= startFlange* float sampleRate|>int
+            let stop= stopFlange* float sampleRate|>int
+
+            let startArray=[|for i in 0..start do 0.|]
+
+
+            let mutable count =decay
+            let mutable testStop=0
+            rep <-[|
+                for i in 0..wave.Length-1  do
+
+
+                   if (float i%period=0. && count>2) then
+                    count<- count-1
+                   else count<-count
+
+                   if (i%count<>0 && testStop=0)then
+                    wave.[i]
+                    if wave.[i]= wave.[stop] then testStop<-1
+                   else 0|>ignore
+                   
+            |]
+
+            let result= Array.append[|start,rep|]
+            let newWave= Superpose [|sndWave;rep|] [|0.0;0.0|] 1.5
+            sndWave <- newWave
+            rep 

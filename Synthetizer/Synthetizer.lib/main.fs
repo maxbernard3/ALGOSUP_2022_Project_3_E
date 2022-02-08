@@ -38,7 +38,7 @@
             | "triangle" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.triangleWave frequency amplitude i)
             | "sawtooth" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.sawWave frequency amplitude i)
             | "square" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.squareWave frequency amplitude i)
-            | "empty" -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.emptyWave frequency amplitude i)
+            | "empty" -> Array.create (int (float sampleRate * duration)) 0.001
             | _ -> Array.init (int (float sampleRate * duration)) (fun i -> Waves.squareWave frequency amplitude i)
 
 

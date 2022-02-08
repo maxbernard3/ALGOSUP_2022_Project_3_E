@@ -21,9 +21,10 @@
                         2.**pow
                
            
-            if not (note.[1]='#') then
-              if not (note.[1]='8') then
-                match note.[0] with
+            if (note.Length<3) then
+              if ((int note.[1])-48<=8) then
+               
+                   match note.[0] with
                     |'A'->  result<-if (note.[1]='0')then
                                          Main.CreateWave wave (27.50000) amplitude duration
                                     else
@@ -35,12 +36,14 @@
                     |'E'->  result<- Main.CreateWave wave (41.20344*multiplier) amplitude duration
                     |'F'->  result<- Main.CreateWave wave (43.65353*multiplier) amplitude duration
                     |'G'->  result<- Main.CreateWave wave (48.99943*multiplier) amplitude duration
-                    |_-> invalidArg note "note not found" 
-              else
+                    |_-> invalidArg note $"{note} is not a valid note" 
+              else if((int note.[1])-48=8) then
                     result<- Main.CreateWave wave (32.70320*multiplier) amplitude duration
+              else
+                invalidArg note $"{note} is not a valid note" 
 
             else
-              if not (note.[2]='8') then
+              if  (note.[2]<>'8' && note.[1]='#') then
                 match note.[0] with
                     |'A'->  result<-if (note.[1]='0')then
                                          Main.CreateWave wave (29.13524) amplitude duration
@@ -50,9 +53,9 @@
                     |'D'->  result<- Main.CreateWave wave (38.89087*multiplier) amplitude duration
                     |'F'->  result<- Main.CreateWave wave (46.24930*multiplier) amplitude duration
                     |'G'->  result<- Main.CreateWave wave (51.91309*multiplier) amplitude duration
-                    |_-> invalidArg note "note not found" 
+                    |_-> invalidArg note $"{note} is not a valid note"  
               else
-                invalidArg note "note not found" 
+                invalidArg note $"{note} is not a valid note" 
 
        
 

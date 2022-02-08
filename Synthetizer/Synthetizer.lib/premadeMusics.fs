@@ -259,3 +259,26 @@
               
               
             |]
+
+            let arr = [|
+                Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                Filters.makeChord[| Envelope.envelope (Notes.Note "sin" "D4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                                    Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                                    Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.2)  0.039 0. 0.11 0.059 1.|];
+                Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                Envelope.envelope (Notes.Note "sin" "B4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+
+                Envelope.envelope (Notes.Note "sin" "A4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                Envelope.envelope (Notes.Note "sin" "G4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                Envelope.envelope (Notes.Note "sin" "D5" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+
+                Filters.makeChord[| Envelope.envelope (Notes.Note "sin" "D4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                                    Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.2)  0.039 0. 0.11 0.059 1.;|]
+                Filters.makeChord[| Envelope.envelope (Notes.Note "sin" "D4" 0.5 0.2)  0.039 0. 0.11 0.059 1.;
+                                    Envelope.envelope (Notes.Note "sin" "G3" 0.5 0.2)  0.039 0. 0.11 0.059 1.;|]
+                |]
+
+            let time = [|0.00;0.2500;0.500;0.52500;1.510;0.7550;0.7650;1.015;1.2515|]
+
+
+            let VivaldiSpring=Filters.Superpose arr time 60.
