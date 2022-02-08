@@ -10,7 +10,7 @@
 
         let sampleRate = GlobalVar.sampleRate
 
-        let makeOverdrive multiplicator wave =
+        let makeOverdrive wave multiplicator =
             let logic x =
                 if x < (-1. * multiplicator) then (-1. * multiplicator) else
                 if x > 1. * multiplicator then 1. * multiplicator else
