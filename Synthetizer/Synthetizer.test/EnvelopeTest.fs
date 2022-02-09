@@ -23,13 +23,6 @@ let Attack_Test () =
     let total = Array.init redundency (fun i -> (attackRand.[i] + decayRand.[i] + sustainRand.[i] + releaseRand.[i]))
     let amplitudeRand = Array.init redundency (fun i -> random.NextDouble())
     let freqRand = Array.init redundency (fun i -> random.NextDouble()*200.)
-    
-    async {
-            let! text = File.ReadAllTextAsync(path) |> Async.AwaitTask
-            let fileName = Path.GetFileName(path)
-            Console.WriteLine($"File {fileName} has {text.Length} bytes")
-    }
-
 
     let resultEnvelop = Array.init redundency (fun i -> Envelope.envelope (Main.CreateWave "square" freqRand.[i] amplitudeRand.[i] total.[i]) attackRand.[i] decayRand.[i] sustainRand.[i] releaseRand.[i] holdRand.[i])
 
