@@ -24,5 +24,4 @@ namespace Synthetizer.lib
                 let waves = wave.[int (float sampleRate * (decayVar + attackVar + sustainVar)) + i]
                 release.[j] <- (waves * (((float i)*(-1. * hold)) / (releaseVar * float sampleRate)))
 
-            GlobalFunc.fusedData [|attack.ToArray(); decay; sustain.ToArray()|]
-            
+            GlobalFunc.fusedData [|attack.ToArray(); decay; sustain.ToArray(); release|]
