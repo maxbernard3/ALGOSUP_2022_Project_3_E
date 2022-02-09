@@ -18,8 +18,11 @@ namespace Synthetizer.lib
             for i=0 to (int(sustainVar*float sampleRate) - 1) do
                 sustain.Add(wave.[int (float sampleRate * (decayVar + attackVar)) + i] * hold)
 
-            let release = Array.create (int (float sampleRate * releaseVar)) 0.  
-            for i=(int(releaseVar*float sampleRate)) downto 1 do
-                Array.set release (int (float sampleRate * releaseVar) - i) (wave.[int (float sampleRate * (decayVar + attackVar + sustainVar)) - i] * (((float i)*(-1. * hold)) / (releaseVar * float sampleRate)))
+            let release = Array.create (int (float sampleRate * releaseVar) + 10) 0.
+            for i=(int(releaseVar*float sampleRate) - 1) downto 1 do
+                let j = int (float sampleRate * releaseVar) - i
+                let waves = wave.[int (float sampleRate * (decayVar + attackVar + sustainVar)) + i]
+                release.[j] <- (waves * (((float i)*(-1. * hold)) / (releaseVar * float sampleRate)))
 
-            GlobalFunc.fusedData [|attack.ToArray(); decay; sustain.ToArray(); release|]
+            GlobalFunc.fusedData [|attack.ToArray(); decay; sustain.ToArray()|]
+            

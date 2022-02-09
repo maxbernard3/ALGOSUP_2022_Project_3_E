@@ -7,7 +7,7 @@
 
         let sampleRate = GlobalVar.sampleRate
 
-        let makeOverdrive multiplicator wave =
+        let makeOverdrive wave multiplicator =
             let logic x =
                 if x < (-1. * multiplicator) then (-1. * multiplicator) else
                 if x > 1. * multiplicator then 1. * multiplicator else
@@ -63,50 +63,19 @@
             let a = int (start.[1] * float sampleRate)
             for i=0 to (waves.Length - 1) do
                 for j=0 to (waves.[i].Length - 1) do
-                    if table.[0].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[0] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (1)
-                    elif table.[1].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[1] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (2)
-                    elif table.[2].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[2] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (3)
-                    elif table.[3].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[3] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (4)
-                    elif table.[4].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[4] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (5)
-                    elif table.[5].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[5] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (6)
-                    elif table.[6].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[6] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (7)
-                    elif table.[7].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[7] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (8)
-                    elif table.[8].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[8] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (9)
-                    elif table.[9].[(int(start.[i]*float sampleRate)) + j] = 0. then
-                        Array.set table.[9] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
-                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (10)
+                    let mutable k = 0
+                    while k < 10 do
+                    if table.[k].[(int(start.[i]*float sampleRate)) + j] = 0. then
+                        Array.set table.[k] ((int(start.[i]*float sampleRate)) + j) waves.[i].[j]
+                        Array.set tableHeight ((int(start.[i]*float sampleRate)) + j) (k+1)
+                        k <- 11
+                    else
+                        k <- k+1
 
             let sum (array:float[][]) (i:int) =
                 let result =
-                    array.[0].[i] +
-                    array.[1].[i] +
-                    array.[2].[i] +
-                    array.[3].[i] +
-                    array.[4].[i] +
-                    array.[5].[i] +
-                    array.[6].[i] +
-                    array.[7].[i] +
-                    array.[8].[i] +
-                    array.[9].[i]
-
+                    array.[0].[i] + array.[1].[i] + array.[2].[i] + array.[3].[i] + array.[4].[i] +
+                    array.[5].[i] + array.[6].[i] + array.[7].[i] + array.[8].[i] + array.[9].[i]
                 result
             
             let result = Array.create (int(lengh*float sampleRate)) 0.
